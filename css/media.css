@@ -1,0 +1,15 @@
+@media screen and (min-width:786px){
+  .container{
+    width: 750px;
+  }
+}
+@media screen and (min-width:992){
+  .container{
+    width: 970px;
+  }
+}
+@media screen and (min-width:1200){
+  .container{
+    width: 1170px;
+  }
+}
