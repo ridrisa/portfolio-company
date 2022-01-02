@@ -107,7 +107,7 @@ body{
   border-bottom: 1px solid var(--primaryColor);
   z-index: 100;
   top: calc(100% + 10px);
-  gap: 4rem;
+  gap: 1rem;
   display: flex;
   border-radius: .5rem;
   -webkit-border-radius: .5rem;
@@ -137,6 +137,7 @@ body{
 .nav-header .container .nav-links li .dropdown .dropdown-menu li a{
   color: var(--primaryColor);
   text-decoration: none;
+  min-width: 200px;
   font-size: .9rem;
 }
 .nav-header .container .nav-links li .dropdown .dropdown-menu li a i{
@@ -181,7 +182,7 @@ body{
 /** 2.1- Main  */
 .main{
   position: relative;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 60px);
 }
 .main .container{
   height: 90%;
@@ -189,6 +190,10 @@ body{
   grid-template-columns: repeat(2,1fr);
   justify-items: center;
   align-items: center;
+}
+.main .container .image,
+.main .container .text{
+  margin-top: -4rem;
 }
 .main .container .text .title{
   font-size: 1.9rem;
@@ -231,11 +236,11 @@ body{
   z-index: -1;
   background-color: var(--primaryColor);
   transform-origin: top center;
-  transform: skew(-65.7deg);
-  -webkit-transform: skew(-65.7deg);
-  -moz-transform: skew(-65.7deg);
-  -ms-transform: skew(-65.7deg);
-  -o-transform: skew(-65.7deg);
+  transform: skew(-66.2deg);
+  -webkit-transform: skew(-66.2deg);
+  -moz-transform: skew(-66.2deg);
+  -ms-transform: skew(-66.2deg);
+  -o-transform: skew(-66.2deg);
 }
 @keyframes up-to-down{
   from{
