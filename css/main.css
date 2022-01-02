@@ -33,6 +33,9 @@
 }
 /** 1.1- Root Element */
 :root{
+  --primaryColor:#2196F3;
+  --secondaryColor:#1787E0;
+  --ascentColor:#2A2A2A;
   scroll-behavior: smooth;
 }
 /** 1.2- Body Element */
