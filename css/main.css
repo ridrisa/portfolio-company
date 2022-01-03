@@ -17,7 +17,7 @@
    2.0- Nav Header
    2.1- Main 
    2.2- Articles
-   2.3- 
+   2.3- Gallery
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -36,6 +36,7 @@
   --primaryColor:#2196F3;
   --secondaryColor:#1787E0;
   --ascentColor:#2A2A2A;
+  --bg-section:#EFEFEC;
   scroll-behavior: smooth;
 }
 /** 1.2- Body Element */
@@ -342,10 +343,77 @@ body{
     -moz-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     -o-transform: translateX(-10px);
+  }
 }
+/** 2.3- Gallery  */
+.gallery{
+  background-color: var(--bg-section);
 }
-
-
+.gallery .items{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2rem;
+}
+.gallery .items .item {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.gallery .items .item .image{
+  position: relative;
+  overflow: hidden;
+}
+.gallery .items .item .image::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255,.2);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.gallery .items .item .image img{
+  max-width: 100%;
+  border-radius: .5rem;
+  transition: transform .5s ease-in-out ;
+  -webkit-transition: transform .5s ease-in-out ;
+  -moz-transition: transform .5s ease-in-out ;
+  -ms-transition: transform .5s ease-in-out ;
+  -o-transition: transform .5s ease-in-out ;
+}
+.gallery .items .item:hover .image img {
+  transform: scale(1.2) rotate(-5deg);
+  -webkit-transform: scale(1.2) rotate(-5deg);
+  -moz-transform: scale(1.2) rotate(-5deg);
+  -ms-transform: scale(1.2) rotate(-5deg);
+  -o-transform: scale(1.2) rotate(-5deg);
+}
+.gallery .items .item:hover .image::before{
+  animation: flashing .9s ease-in-out;
+  -webkit-animation: flashing .9s ease-in-out;
+}
+@keyframes flashing {
+  0%,40%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    width: 200%;
+    height: 200%;
+  }
+}
 
 
 
