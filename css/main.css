@@ -18,6 +18,7 @@
    2.1- Main 
    2.2- Articles
    2.3- Gallery
+   2.4 Features
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -414,8 +415,171 @@ body{
     height: 200%;
   }
 }
-
-
+/** 2.4- Features */
+.features .box{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+.features .box .item {
+  border: 1px solid #ddd;
+}
+.features .box .item .image{
+  position: relative;
+  overflow: hidden;
+}
+.features .box .item .image img{
+  max-width: 100%;
+}
+.features .box .item .image::before{
+  position: absolute;
+  content: "";
+  transform-origin: bottom;
+  bottom: 0;
+  height: 200px;
+  z-index: 999999;
+  left: -7px;
+  right: 0;
+  background-color: #fff;
+  transform: skewX(-62deg);
+  -webkit-transform: skewX(-62deg);
+  -moz-transform: skewX(-62deg);
+  -ms-transform: skewX(-62deg);
+  -o-transform: skewX(-62deg);
+  transition: transform .1s ease-in-out;
+  -webkit-transition: transform .1s ease-in-out;
+  -moz-transition: transform .1s ease-in-out;
+  -ms-transition: transform .1s ease-in-out;
+  -o-transition: transform .1s ease-in-out;
+}
+.features .box .item:hover .image::before{
+  transform: skewX(62deg);
+  -webkit-transform: skewX(62deg);
+  -moz-transform: skewX(62deg);
+  -ms-transform: skewX(62deg);
+  -o-transform: skewX(62deg);
+}
+.features .box .item .image::after{
+  position: absolute;
+  content: "";
+  inset: 0;
+}
+.features .box .item.quality .image::after{
+  background-color: rgba(244, 64, 54,.6);
+}
+.features .box .item.time .image::after{
+  background-color: rgba(0, 150, 136,.6);
+}
+.features .box .item.passion .image::after{
+  background-color: rgba(23, 135, 224,.6);
+}
+.features .box .item .info{
+  padding: 1rem;
+}
+.features .box .item .info .title{
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.features .box .item .info .title::after{
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  height: 4px;
+  width: 55px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.features .box .item.quality .info .title::after{
+  background-color: #f44036;
+}
+.features .box .item.time .info .title::after{
+  background-color: #009688;
+}
+.features .box .item.passion .info .title::after{
+  background-color: var(--primaryColor);
+}
+.features .box .item .info .desc{
+  font-size: .8rem;
+  line-height: 1.8;
+  color: #999;
+}
+.features .box .item .info .link{
+  text-align: center;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 1.8rem;
+  padding: .5rem .7rem;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+  transition: background .5s ease-in-out;
+  -webkit-transition: background .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out;
+  -ms-transition: background .5s ease-in-out;
+  -o-transition: background .5s ease-in-out;
+}
+.features .box .item .info .link a{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.features .box .item .info .link a,
+.features .box .item .info .link i{
+  transition: color .5s ease-in-out;
+  -webkit-transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -ms-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+}
+.features .box .item.quality .info .link i,
+.features .box .item.quality .info .link a{
+  color: #f44036;
+}
+.features .box .item.time .info .link i,
+.features .box .item.time .info .link a{
+  color: #009688;
+}
+.features .box .item.passion .info .link i,
+.features .box .item.passion .info .link a{
+  color: var(--primaryColor);
+}
+.features .box .item.quality .info .link{
+  border: 2px solid #f44036;
+  background: linear-gradient(to right, #f44036 50%, #FFFFFF 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.features .box .item.time .info .link{
+  border: 2px solid #009688;
+  background: linear-gradient(to right , #009688 50%, #FFFFFF 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.features .box .item.passion .info .link{
+  border: 2px solid var(--primaryColor);
+  background: linear-gradient(to right ,#1787E0 50%, #FFFFFF 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.features .box .item:hover .info .link{
+  background-position: left bottom;
+}
+.features .box .item:hover .info .link a,
+.features .box .item:hover .info .link i{
+  color: #FFFFFF;
+}
 
 
 
