@@ -617,7 +617,7 @@ body{
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.testimonials .items .item .info .title{
+.testimonials .items .item .info .name{
   font-size: 1.2rem;
   color: var(--secondaryColor);
 }
