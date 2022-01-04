@@ -20,6 +20,7 @@
    2.3- Gallery
    2.4- Features
    2.5- Testimonials
+   2.6- Team Members
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -639,8 +640,94 @@ body{
   color: #999;
   line-height: 1.8;
 }
-
-
+/** 2.6- Team Members */
+.team-members .items{
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+.team-members .items .item{
+  padding: 1.5rem;
+  padding-top: 3rem;
+  position: relative;
+}
+.team-members .items .item::before,
+.team-members .items .item::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: unset;
+  background-color: #f3f3f3;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.team-members .items .item::before{
+  z-index: -2;
+  width: calc(100% - 70px);
+}
+.team-members .items .item::after{
+  z-index: -1;
+  width: 0;
+  transition: width .5s ease-in-out;
+  -webkit-transition: width .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out;
+  -ms-transition: width .5s ease-in-out;
+  -o-transition: width .5s ease-in-out;
+}
+.team-members .items .item:hover:after{
+  z-index: -1;
+  width: calc(100% - 70px);
+  background-color: #e4e4e4;
+}
+.team-members .items .item .box {
+  display: flex;
+  gap: 1rem;
+}
+.team-members .items .item .box .image img{
+  width: 100%;
+  min-height: 270px;
+  max-height: 270px;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.team-members .items .item  .box .social-media{
+  list-style: none;
+  align-self: center;
+}
+.team-members .items .item .box .social-media li a{
+  display: block;
+  padding-block: 1rem;
+}
+.team-members .items .item .box .social-media li a i{
+  color: #888;
+  transition: color .5s ease-in-out;
+  -webkit-transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -ms-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+}
+.team-members .items .item .box .social-media li:hover a i{
+  color: var(--primaryColor);
+}
+.team-members .items .item .info{
+  padding-top: 1rem;
+  padding-left: 4.5rem;
+}
+.team-members .items .item .info .name{
+  font-size: 1.2rem;
+}
+.team-members .items .item .info .desc{
+  line-height: 1.8;
+  color: #999;
+  font-size: .8rem;
+}
 
 
 
