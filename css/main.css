@@ -722,6 +722,12 @@ body{
 }
 .team-members .items .item .info .name{
   font-size: 1.2rem;
+  color: var(--primaryColor);
+  transition: color .5s ease-in-out;
+  -webkit-transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -ms-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
 }
 .team-members .items .item .info .desc{
   line-height: 1.8;
@@ -735,6 +741,10 @@ body{
 }
 .team-members .items .item:hover .box .image img{
   filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.team-members .items .item:hover .info .name{
+  color: var(--ascentColor);
 }
 
 
