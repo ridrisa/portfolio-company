@@ -18,7 +18,8 @@
    2.1- Main 
    2.2- Articles
    2.3- Gallery
-   2.4 Features
+   2.4- Features
+   2.5- Testimonials
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -580,6 +581,79 @@ body{
 .features .box .item:hover .info .link i{
   color: #FFFFFF;
 }
+/** 2.5- Testimonials */
+.testimonials{
+  background-color: var(--bg-section);
+}
+.testimonials .items {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+.testimonials .items .item {
+  position: relative;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.testimonials .items .item .image img{
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  border: 8px solid var(--bg-section);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonials .items .item .info .title{
+  font-size: 1.2rem;
+  color: var(--secondaryColor);
+}
+.testimonials .items .item .info .jop-title{
+  font-size: .8rem;
+  color: var(--primaryColor);
+  font-weight: normal;
+}
+.testimonials .items .item .info .rating{
+  margin-bottom: 1rem;
+}
+.testimonials .items .item .info .rating i{
+  font-size: .7rem;
+}
+.testimonials .items .item .info .rating i.fill{
+  color: orange;
+}
+.testimonials .items .item .info .desc{
+  font-size: .8rem;
+  color: #999;
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
