@@ -22,6 +22,7 @@
    2.5- Testimonials
    2.6- Team Members
    2.7- Services 
+   2.8- Skills 
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -857,9 +858,60 @@ body{
   vertical-align: middle;
   color: var(--secondaryColor);
 }
-
-
-
+/** 2.8- Skills */
+.skills .box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 8rem;
+}
+.skills .box .skills-progress{
+  flex-grow: 1;
+}
+.skills .box .skills-progress .skill{
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.skills .box .skills-progress .skill .title{
+  display: flex;
+  justify-content: space-between;
+  color: var(--primaryColor);
+  align-items: center;
+  font-size: .9rem;
+  margin-bottom: .5rem;
+}
+.skills .box .skills-progress .skill .title span{
+  font-size: .8rem;
+  color: var(--primaryColor);
+  padding: .4rem;
+  border: 1px solid #ddd;
+  display: inline-block;
+  text-align: center;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+}
+.skills .box .skills-progress .skill .progress{
+  position: relative;
+  background-color: #EFEFEC;
+  height: 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.skills .box .skills-progress .skill .progress span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-start-start-radius: .5rem;
+  border-end-start-radius: .5rem;
+  background-color: var(--primaryColor);
+}
 
 
 
