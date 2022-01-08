@@ -23,6 +23,7 @@
    2.6- Team Members
    2.7- Services 
    2.8- Skills 
+   2.9- Works
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -912,8 +913,84 @@ body{
   border-end-start-radius: .5rem;
   background-color: var(--primaryColor);
 }
-
-
+/** 2.9- Works */
+.works{
+  background-color: var(--bg-section);
+}
+.works .box{
+  display: flex;
+  align-items: center;
+  column-gap: 10rem;
+}
+.works .box .work{
+  flex-grow: 1;
+}
+.works .box .work .item{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  border: 3px solid #FFFFFF;
+  background-color: #F6F5F5;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.works .box .work .item::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  z-index: -1;
+  transform-origin: center;
+  background-color: #EDEDED;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transition: width .5s ease-in-out , height .5s ease-in-out;
+  -webkit-transition: width .5s ease-in-out , height .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out , height .5s ease-in-out;
+  -ms-transition: width .5s ease-in-out , height .5s ease-in-out;
+  -o-transition: width .5s ease-in-out , height .5s ease-in-out;
+}
+.works .box .work .item .icon img{
+  width: 70px;
+  height: 70px;
+}
+.works .box .work .item .info{
+  flex-grow: 1;
+  align-self: flex-start;
+}
+.works .box .work .item .info .name{
+  font-size: 1rem;
+  color: var(--primaryColor);
+}
+.works .box .work .item .info .desc{
+  line-height: 1.8rem;
+  font-size: .8rem;
+  text-align: justify;
+  color: #999;
+}
+.works .box .work .item:hover:before{
+  height: 100%;
+  width: 100%;
+}
 
 
 
