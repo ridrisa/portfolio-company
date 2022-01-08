@@ -25,6 +25,7 @@
    2.8- Skills 
    2.9- Works
    2.10- Events 
+   2.11- Pricing Plans
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -997,20 +998,27 @@ body{
 .events{
   position: relative;
 }
+.pricing-plans::after,
+.pricing-plans::before,
 .events::after,
 .events::before{
   content: url(../assets/images/dots.png);
   position: absolute;
+  z-index: 1;
 }
+.pricing-plans::before,
 .events::before{
   right: 0;
-  top: -2px; 
+  top: 80px; 
 }
+.pricing-plans::after,
 .events::after{
   left: 0;
-  bottom: -2px;
+  bottom: 80px;
 }
 .events .items{
+  z-index: 2;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
@@ -1123,7 +1131,157 @@ body{
 .events .items .info .subscribe form .form-control input:focus[type='email']{
   border: 1px solid var(--primaryColor);
 }
-
+/** 2.11- Pricing Plans */
+.pricing-plans{
+  position: relative;
+  background-color: var(--bg-section);
+}
+.pricing-plans .items {
+  position: relative;
+  z-index: 2;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.pricing-plans .items .item{
+  position: relative;
+  flex-grow: 1;
+  z-index: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-block: 1rem;
+  background-color: #FFFFFF;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+}
+.pricing-plans .items .item::before,
+.pricing-plans .items .item::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  z-index: -1;
+  height: 50%;
+  background-color: #f6f6f6;
+  transition: width .5s ease-in-out;
+  -webkit-transition: width .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out;
+  -ms-transition: width .5s ease-in-out;
+  -o-transition: width .5s ease-in-out;
+}
+.pricing-plans .items .item::before{
+  top: 0;
+  left: 0;
+}
+.pricing-plans .items .item::after{
+  bottom: 0;
+  right: 0;
+}
+.pricing-plans .items .item:hover:before,
+.pricing-plans .items .item:hover:after{
+  width: 100%;
+}
+.pricing-plans .items .item > .title{
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.pricing-plans .items .item.popular .label{
+  position: absolute;
+  writing-mode: vertical-rl;
+  background-color: var(--primaryColor);
+  color: white;
+  font-weight: bold;
+  padding: 10px 10px 35px 10px;
+  font-size: .9rem;
+  top: -.07rem;
+  right: 1.2rem;
+  width: 40px;
+}
+.pricing-plans .items .item.popular .label::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  border-color: transparent transparent white;
+  border-width: 20px;
+}
+.pricing-plans .items .item .icon {
+  text-align: center;
+}
+.pricing-plans .items .item .icon img{
+  width: 75px;
+}
+.pricing-plans .items .item .amount{
+  text-align: center;
+  margin-block: 1.5rem;
+}
+.pricing-plans .items .item .amount .title{
+  font-size: 3rem;
+  color: var(--primaryColor);
+}
+.pricing-plans .items .item .amount .sub-title{
+  font-size: .8rem;
+  color: #777;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.pricing-plans .items .item .features{
+  list-style: none;
+  margin-bottom: 1.7rem;
+}
+.pricing-plans .items .item .features li{
+  padding-block: .8rem;
+  padding-left: 1.6rem;
+  color: #999;
+  font-size: .9rem;
+}
+.pricing-plans .items .item .features li:not(:last-of-type){
+  border-bottom: 1px solid #f3f3f3;
+}
+.pricing-plans .items .item .features li i{
+  color: var(--primaryColor);
+  padding-right: .5rem;
+}
+.pricing-plans .items .item .btn{
+  border: none;
+  display: block;
+  text-align: center;
+  background-color: unset;
+  margin: auto;
+}
+.pricing-plans .items .item .btn a{
+  color: var(--primaryColor);
+  margin: auto;
+  padding: .7rem 1rem;
+  font-size: .9rem;
+  text-decoration: none;
+  display: inline-block;
+  border: 1.5px solid var(--primaryColor);
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+  transition: color .5s , background-color .5s;
+  -webkit-transition: color .5s , background-color .5s;
+  -moz-transition: color .5s , background-color .5s;
+  -ms-transition: color .5s , background-color .5s;
+  -o-transition: color .5s , background-color .5s;
+}
+.pricing-plans .items .item .btn:hover a{
+  background-color: var(--primaryColor);
+  color: #FFFFFF;
+}
+.pricing-plans .items .item.popular{
+  margin-top: -3.5rem;
+}
 
 
 
