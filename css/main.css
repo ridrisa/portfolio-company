@@ -24,10 +24,12 @@
    2.7- Services 
    2.8- Skills 
    2.9- Works
+   2.10- Events 
 * 3- Common Style
    3.0- Container
    3.1- Main Title
    3.2- Padding Block 
+   3.3- PlaceHolder Input
 */
 /* 
 /** 1- Genral Style */
@@ -991,8 +993,136 @@ body{
   height: 100%;
   width: 100%;
 }
-
-
+/** 2.10- Events */
+.events{
+  position: relative;
+}
+.events::after,
+.events::before{
+  content: url(../assets/images/dots.png);
+  position: absolute;
+}
+.events::before{
+  right: 0;
+  top: -2px; 
+}
+.events::after{
+  left: 0;
+  bottom: -2px;
+}
+.events .items{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 5rem;
+}
+.events .items .image img{
+  width: 500px;
+}
+.events .items .info .time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.events .items .info .time .unit{
+  border: 1px solid #D5D5D5;
+  border-radius: .4rem;
+  flex-grow: 1;
+  text-align: center;
+  padding-block: .5rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+  transition: border .5s ease-in-out;
+  -webkit-transition: border .5s ease-in-out;
+  -moz-transition: border .5s ease-in-out;
+  -ms-transition: border .5s ease-in-out;
+  -o-transition: border .5s ease-in-out;
+}
+.events .items .info .time .unit .count{
+  font-size: 2rem;
+  font-weight: bolder;
+  display: block;
+  padding: .5rem;
+  color: var(--primaryColor);
+  border-bottom: 1px solid #D5D5D5;
+  transition: border .5s ease-in-out;
+  -webkit-transition: border .5s ease-in-out;
+  -moz-transition: border .5s ease-in-out;
+  -ms-transition: border .5s ease-in-out;
+  -o-transition: border .5s ease-in-out;
+}
+.events .items .info .time .unit .title{
+  font-size: .9rem;
+  padding: .5rem;
+  color: #888;
+  margin-top: .5rem;
+  display: block;
+}
+.events .items .info > .title{
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--primaryColor);
+}
+.events .items .info > .desc{
+  margin-top: .7rem;
+  font-size: .8rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #999;
+}
+.events .items .info .time .unit:hover .count,
+.events .items .info .time .unit:hover{
+  border-color: var(--primaryColor);
+}
+.events .items .info .subscribe form .form-control{
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.events .items .info .subscribe form .form-control input[type='email']{
+  padding-inline: 1rem;
+  border: 1px solid #D5D5D5;
+  width: 80%;
+  max-height: 2.5rem;
+  min-height: 2.5rem;
+  caret-color: var(--primaryColor);
+  color: #2A2A2A;
+  outline: unset;
+  background-color: #EFEFEC;
+  border-start-start-radius: .5rem;
+  border-end-start-radius: .5rem;
+}
+.events .items .info .subscribe form .form-control button[type='submit']{
+  font-size: .9rem;
+  max-height: 2.5rem;
+  min-height: 2.5rem;
+  cursor: pointer;
+  padding-inline:  1rem;
+  color: #FFFFFF;
+  margin-left: -1rem;
+  border: 1px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+  border-start-end-radius: .5rem;
+  border-end-end-radius: .5rem;
+  transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -ms-transition: background-color .5s ease-in-out;
+  -o-transition: background-color .5s ease-in-out;
+}
+.events .items .info .subscribe form .form-control button:hover[type='submit']{
+  background-color: var(--secondaryColor);
+}
+.events .items .info .subscribe form .form-control input:hover[type='email'],
+.events .items .info .subscribe form .form-control input:focus[type='email']{
+  border: 1px solid var(--primaryColor);
+}
 
 
 
@@ -1101,4 +1231,9 @@ body{
 /** 3.2- Padding Block */
 .p-y{
   padding-block: 2rem;
+}
+/** 3.3- PlaceHolder Input  */
+::placeholder{
+  font-size: .8rem;
+  color: #999;
 }
