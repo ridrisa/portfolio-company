@@ -27,6 +27,7 @@
    2.10- Events 
    2.11- Pricing Plans
    2.12- Top Videos 
+   2.13- Statistic
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -1354,7 +1355,76 @@ body{
   font-size: .8rem;
   color: #999;
 }
-
+/** 2.13- Statistic */
+.statistic{
+  position: relative;
+  background: url(../assets/images/stats.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.statistic::before{
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgb(255 255 255 / 95%);
+}
+.statistic .items{
+  margin-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.statistic .items .item{
+  position: relative;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+  flex-grow: 1;
+  padding: 1.4rem;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+}
+.statistic .items .item::before,
+.statistic .items .item::after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 0;
+  background-color: var(--primaryColor);
+  transition: height .5s linear;
+  -webkit-transition: height .5s linear;
+  -moz-transition: height .5s linear;
+  -ms-transition: height .5s linear;
+  -o-transition: height .5s linear;
+}
+.statistic .items .item:after{
+  right: 0;
+  top: 0;
+}
+.statistic .items .item::before{
+  left: 0;
+  bottom: 0;
+}
+.statistic .items .item:hover:before,
+.statistic .items .item:hover:after{
+  height: 100%;
+}
+.statistic .items .item .icon{
+  color: var(--secondaryColor);
+}
+.statistic .items .item .count{
+  font-size: 2.5rem;
+  color: var(--primaryColor);
+  margin-top: .5rem;
+}
+.statistic .items .item .title{
+  font-size: .9rem;
+  color: var(--primaryColor);
+}
 
 
 /* * 3- Common Style */
