@@ -2,6 +2,9 @@
   .container{
     width: 750px;
   }
+  .nav-header{
+    display: none;
+  }
 }
 @media screen and (min-width:768px) and (max-width:991px){
   .container{
@@ -11,5 +14,8 @@
 @media screen and (min-width:992px){
   .container{
     width: 1170px;
+  }
+  .navbar{
+    display: none;
   }
 }
