@@ -29,6 +29,7 @@
    2.12- Top Videos 
    2.13- Statistic
    2.14- Discount
+   2.15- Footer
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -1517,6 +1518,115 @@ body{
 .discount .items .form form .form-control button:hover{
  background-color: var(--secondaryColor);
 }
+/** 2.15- Footer  */
+.footer{
+  background-color: rgb(25, 25, 25);
+  color: #FFFFFF;
+}
+.footer .items{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 2fr;
+  gap: 1rem;
+}
+.footer .items .item.brief .title{
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+.footer .items .item.brief .social-links{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer .items .item.brief .social-links li i{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+  background-color: rgb(49, 49, 49);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -ms-transition: background-color .5s ease-in-out;
+  -o-transition: background-color .5s ease-in-out;
+}
+.footer .items .item.brief .social-links li:first-of-type i:hover{
+  background-color: rgb(24, 119, 242);
+}
+.footer .items .item.brief .social-links li:nth-of-type(2) i:hover{
+  background-color: rgb(29, 161, 242);
+}
+.footer .items .item.brief .social-links li:last-of-type i:hover{
+  background-color: rgb(255, 0, 0);
+}
+.footer .items .item.brief .desc{
+  line-height: 1.8;
+  margin-top: 1rem;
+  text-align: justify;
+  font-size: .9rem;
+  color: #888;
+}
+.footer .items .item.links{
+  list-style: none;
+}
+.footer .items .item.links li{
+  padding-block: 1rem;
+}
+.footer .items .item.links li:not(:last-of-type){
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+.footer .items .item.links li a{
+  display: inline-block;
+  color: #f3f3f3;
+  font-size: .9rem;
+  text-decoration: none;
+}
+.footer .items .item.links li i{
+  margin-right: .5rem;
+  color: var(--primaryColor);
+}
+.footer .items .item.info{
+  list-style: none;
+}
+.footer .items .item.info li{
+  padding-block: 1rem;
+  display: flex;
+}
+.footer .items .item.info li a{
+  text-decoration: none;
+  font-size: .9rem;
+  color: #FFFFFF;
+}
+.footer .items .item.info li i{
+  color: var(--primaryColor);
+  margin-right: 1rem;
+}
+.footer .items .item.images{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.footer .items .item.images .icon{
+  width: 100px;
+  height: 100px;
+}
+.footer .items .item.images .icon img{
+  width: 100%;
+  border: 2px dotted var(--primaryColor);
+  background-color: var(--bg-section);
+  padding: .3rem;
+  border-radius: .3rem;
+  -webkit-border-radius: 1px do;
+  -moz-border-radius: 1px do;
+  -ms-border-radius: 1px do;
+  -o-border-radius: 1px do;
+}
+
 /* * 3- Common Style */
 /**   3.0- Container */
 .container{
