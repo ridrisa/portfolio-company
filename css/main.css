@@ -26,6 +26,7 @@
    2.9- Works
    2.10- Events 
    2.11- Pricing Plans
+   2.12- Top Videos 
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -1282,9 +1283,77 @@ body{
 .pricing-plans .items .item.popular{
   margin-top: -3.5rem;
 }
-
-
-
+/** 2.12- Top Videos  */
+.top-videos .box{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+}
+.top-videos .box .list-item{
+  list-style: none;
+  border: 1px solid #EFEFEC;
+}
+.top-videos .box .list-item li {
+  padding: .8rem;
+  cursor: pointer;
+  transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -ms-transition: background-color .5s ease-in-out;
+  -o-transition: background-color .5s ease-in-out;
+}
+.top-videos .box .list-item li:not(:last-of-type){
+  border-bottom: 1px solid #EFEFEC;
+}
+.top-videos .box .list-item li:first-of-type{
+  display: flex;
+  justify-content: space-between;
+  background-color: #e2e2e2;
+}
+.top-videos .box .list-item li .title{
+  font-size: .9rem;
+}
+.top-videos .box .list-item li:first-of-type i,
+.top-videos .box .list-item li:first-of-type .title{
+  color: var(--primaryColor);
+}
+.top-videos .box .list-item li:not(:first-of-type) .title{
+  color: #888;
+  font-weight: normal;
+  transition: color .5s ease-in-out;
+  -webkit-transition: color .5s ease-in-out;
+  -moz-transition: color .5s ease-in-out;
+  -ms-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+}
+.top-videos .box .list-item li:not(:first-of-type):hover{
+  background-color: #fafafa;
+}
+.top-videos .box .list-item li:not(:first-of-type):hover .title{
+  color: var(--primaryColor);
+}
+  .top-videos .box .list-item li span{
+  display: block;
+  font-size: .8rem;
+  color: #888;
+}
+.top-videos .box .video{
+  background-color: #e2e2e2;
+  width: 100%;
+  border: 1px solid #EFEFEC;
+}
+.top-videos .box .video .info{
+  padding: 1rem;
+  background-color: #FFFFFF;
+}
+.top-videos .box .video .info .title{
+  font-size: 1rem;
+}
+.top-videos .box .video .info .desc{
+  line-height: 1.8;
+  font-size: .8rem;
+  color: #999;
+}
 
 
 
