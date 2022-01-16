@@ -28,6 +28,7 @@
    2.11- Pricing Plans
    2.12- Top Videos 
    2.13- Statistic
+   2.14- Discount
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -1425,8 +1426,97 @@ body{
   font-size: .9rem;
   color: var(--primaryColor);
 }
-
-
+/** 2.14 Discount */
+.discount .items{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.discount .items .brief{
+  padding-top: 3rem;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  background: url(../assets/images/discount-background-1.jpg);
+  background-size: cover;
+  z-index: 1;
+}
+.discount .brief::before{
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgb(23 135 224 / 97%);
+  z-index: -1;
+}
+.discount .items .brief .info .title{
+  font-size: 2rem;
+  color: #FFFFFF;
+  letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+}
+.discount .items .brief .info .desc{
+  font-size: .9rem;
+  color: #D5D5D5;
+  width: 75%;
+  margin: auto;
+  text-align: justify;
+  line-height: 1.8;
+}
+.discount .items .brief .info .image{
+  width: 40%;
+}
+.discount .items .form{
+  margin-top: 3rem;
+  text-align: center;
+}
+.discount .items .form .title{
+  font-size: 2rem;
+  letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+}
+.discount .items .form form .form-control {
+  margin-bottom: 1rem;
+}
+.discount .items .form form .form-control input:not([type='submit']),
+.discount .items .form form .form-control textarea{
+  padding: .6rem;
+  width: 60%;
+  margin: auto;
+  caret-color: var(--primaryColor);
+  outline: none;
+  background-color: #f3f3f3;
+  border: 1px solid #EDEDED;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -ms-border-radius: .3rem;
+  -o-border-radius: .3rem;
+}
+.discount .items .form form .form-control textarea{
+  resize: none;
+}
+.discount .items .form form .form-control input:hover:not([type='submit']),
+.discount .items .form form .form-control textarea:hover{
+  border-color: var(--primaryColor);
+}
+.discount .items .form form .form-control button{
+  width: 60%;
+  cursor: pointer;
+  margin: auto;
+  color: #FFFFFF;
+  padding: .6rem 1rem;
+  border: none;
+  background-color: var(--primaryColor);
+  border-radius: .3rem;
+  transition: background-color .5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out;
+  -ms-transition: background-color .5s ease-in-out;
+  -o-transition: background-color .5s ease-in-out;
+}
+.discount .items .form form .form-control button:hover{
+ background-color: var(--secondaryColor);
+}
 /* * 3- Common Style */
 /**   3.0- Container */
 .container{
