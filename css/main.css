@@ -30,6 +30,7 @@
    2.13- Statistic
    2.14- Discount
    2.15- Footer
+   2.16- CopyRight
 * 3- Common Style
    3.0- Container
    3.1- Main Title
@@ -1626,7 +1627,19 @@ body{
   -ms-border-radius: 1px do;
   -o-border-radius: 1px do;
 }
-
+/** 2.16- CopyRight */
+.copy-right{
+  background-color: rgb(25, 25, 25);
+  color: #FFFFFF;
+  text-align: center;
+}
+.copy-right p{
+  font-size: .9rem;
+}
+.copy-right p a{
+  text-decoration: none;
+  color: #fff;
+}
 /* * 3- Common Style */
 /**   3.0- Container */
 .container{
