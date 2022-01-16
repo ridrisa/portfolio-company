@@ -63,6 +63,9 @@ body{
 /**  2.0- Nav Header  */
 .nav-header{
   background-color: var(--primaryColor);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 .nav-header .container{
   position: relative;
@@ -198,7 +201,8 @@ body{
 /** 2.1- Main  */
 .main{
   position: relative;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 48px);
+  top: 48px;
 }
 .main .container{
   height: 90%;

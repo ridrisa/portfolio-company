@@ -15,14 +15,39 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <!-- Css Files -->
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/menu-mobile.css"/>
     <link rel="stylesheet" href="css/media.css"/>
   </head>
   <body>
+    <!--* Start Menu Mobile-->
+    <nav class="navbar">
+      <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Profile Company Logo"/></a></div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li class="dropdown-menu">
+            <a href="/">Other Links</a>
+            <ul class="dropdown">
+              <li><a href="#testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a></li>
+              <li><a href="#team-members"><i class="far fa-user fa-fw"></i>Team Members</a></li>
+              <li><a href="#services"><i class="far fa-building fa-fw"></i>Services</a></li>
+              <li><a href="#skills"><i class="far fa-check-circle fa-fw"></i>Our Skills</a></li>
+              <li><a href="#works"><i class="far fa-clipboard fa-fw"></i>How it works</a></li>
+            </ul> <!-- ./dropdown -->
+          </li> <!-- ./dropdown-menu -->
+        </div> <!-- ./menu -->
+      </ul> <!-- ./nav-links -->
+    </nav> <!-- ./navbar -->
     <!--* Start Nav Header -->
     <div class="nav-header">
       <div class="container">
         <div class="brand">
-        <img class="logo" src="assets/images/logo.png" alt="Logo">
+        <a href="index.html"><img class="logo" src="assets/images/logo.png" alt="Logo"></a>
         </div> <!-- ./brand -->
         <ul class="nav-links">
           <li class="active"><a href="#">Home</a></li>
