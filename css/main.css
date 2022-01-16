@@ -1578,6 +1578,14 @@ body{
 }
 .footer .items .item.links li{
   padding-block: 1rem;
+  transition: padding-left .5s ease-in-out;
+  -webkit-transition: padding-left .5s ease-in-out;
+  -moz-transition: padding-left .5s ease-in-out;
+  -ms-transition: padding-left .5s ease-in-out;
+  -o-transition: padding-left .5s ease-in-out;
+}
+.footer .items .item.links li:hover{
+  padding-left: 1.2rem;
 }
 .footer .items .item.links li:not(:last-of-type){
   border-bottom: 1px solid rgb(68, 68, 68);
