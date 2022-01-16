@@ -1635,6 +1635,7 @@ body{
 }
 .copy-right p{
   font-size: .9rem;
+  line-height: 1.8;
 }
 .copy-right p a{
   text-decoration: none;
