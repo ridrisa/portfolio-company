@@ -40,10 +40,12 @@
   }
   .skills .box,
   .works .box,
-  .works .box .work .item{
+  .works .box .work .item,
+  .pricing-plans .items{
     flex-direction: column;
   }
-  .skills .box{
+  .skills .box,
+  .pricing-plans .items{
     align-items: unset;
   }
   .works .box .image img,
@@ -68,6 +70,12 @@
   }
   .events .items .info .subscribe form .form-control input[type='email']{
     width: 68%;
+  }
+  .pricing-plans .items{
+    gap: 1rem;
+  }
+  .pricing-plans .items .item.popular{
+    margin-top: 0rem;
   }
 }
 @media screen and (min-width:768px) and (max-width:991px){
