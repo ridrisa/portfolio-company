@@ -9,6 +9,9 @@ $(function () {
     );
     $(this).parent().addClass('active').siblings().removeClass('active');
   });
+  // ------------------------------------------------------------------------->
+  // trigger aos animate
+  AOS.init();
   // -------------------------------------------------------------------------->
   // all top videos
   const topVideos = [
@@ -66,11 +69,19 @@ $(function () {
   );
   // -------------------------------------------------------------------------->
   // count down until events date
-  setInterval(()=>{
-    const events = countdown( new Date(2022, 9, 10) )
-    $('.events .items .info .time .unit:first-of-type .count').text(events.days)
-    $('.events .items .info .time .unit:nth-of-type(2) .count').text(events.hours)
-    $('.events .items .info .time .unit:nth-of-type(3) .count').text(events.minutes)
-    $('.events .items .info .time .unit:last-of-type .count').text(events.seconds)
-  },1000)
+  setInterval(() => {
+    const events = countdown(new Date(2022, 9, 10));
+    $('.events .items .info .time .unit:first-of-type .count').text(
+      events.days
+    );
+    $('.events .items .info .time .unit:nth-of-type(2) .count').text(
+      events.hours
+    );
+    $('.events .items .info .time .unit:nth-of-type(3) .count').text(
+      events.minutes
+    );
+    $('.events .items .info .time .unit:last-of-type .count').text(
+      events.seconds
+    );
+  }, 1000);
 });
