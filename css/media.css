@@ -38,12 +38,23 @@
   .services .items {
     grid-template-columns: repeat(1,1fr);
   }
-  .skills .box{
+  .skills .box,
+  .works .box,
+  .works .box .work .item{
     flex-direction: column;
+  }
+  .skills .box{
     align-items: unset;
   }
+  .works .box .image img,
   .skills .box .image img{
     width: 100%;
+  }
+  .works .box .work{
+    margin-top: 1rem;
+  }
+  .works .box .work .item .info .name{
+    text-align: center;
   }
 }
 @media screen and (min-width:768px) and (max-width:991px){
