@@ -63,6 +63,7 @@
 } 
 .navbar .hamburger {
   display: none;
+  color: #FFF;
   font-size: 24px;
   user-select: none;
  }

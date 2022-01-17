@@ -56,7 +56,7 @@
   --ascentColor:#2A2A2A;
   --bg-section:#EFEFEC;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /** 1.2- Body Element */
 body{
