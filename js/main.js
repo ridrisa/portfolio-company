@@ -120,6 +120,6 @@ $(function () {
   });
   // collapsed navbar mobile screen
   $('.navbar .nav-links a').on('click', function () {
-    $('.navbar .menu').fadeToggle(200);
+    $('.navbar input[type=checkbox]:checked ~ .menu').fadeToggle(200);
   });
 });
