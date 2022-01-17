@@ -1,19 +1,44 @@
 @media screen and (max-width:767px){
   .container{
-    width: 750px;
+    width: 100%;
   }
   .nav-header{
     display: none;
   }
+  .main{
+    height: calc(100vh - 45px);
+    top: 50px;
+  }
+  .main::before{
+    transform: skew(-25.8deg);
+    -webkit-transform: skew(-25.8deg);
+    -moz-transform: skew(-25.8deg);
+    -ms-transform: skew(-25.8deg);
+    -o-transform: skew(-25.8deg);
+}
+  .main .container{
+    overflow: hidden;
+    height: 95%;
+    display: block;
+  }
+  .main .container .image, .main .container .text{
+    margin-top: 2rem;
+  }
+  .main .container .text .title{
+    padding-top: 2rem;
+  }
+  .articles{
+    padding-block: 3rem;
+  }
 }
 @media screen and (min-width:768px) and (max-width:991px){
   .container{
-    width: 970px;
+    width: 100%;
   }
 }
 @media screen and (min-width:992px){
   .container{
-    width: 1170px;
+    width: 85%;
   }
   .navbar{
     display: none;
