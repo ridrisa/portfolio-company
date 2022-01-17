@@ -1,4 +1,24 @@
 $(function () {
+  'use strict';
+  let scrollButton = $('#scroll-top');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      scrollButton.show();
+    } else {
+      scrollButton.hide();
+      $('.nav-header').css({});
+    }
+  });
+  // ------------------------------------------------------------------------->
+  // click button to scroll top
+  scrollButton.on('click', function () {
+    $('html ,body').animate(
+      {
+        scrollTop: 0,
+      },
+      400
+    );
+  });
   // list items navbar click item to move section
   $('.nav-header .container .nav-links > li a').on('click', function () {
     $('html,body').animate(
