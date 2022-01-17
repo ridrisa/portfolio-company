@@ -1,5 +1,8 @@
 $(function () {
   'use strict';
+  // move to top postilion after reload page
+  $('html , body').animate({ scrollTop: 0 }, 300);
+  // -------------------------------------------------------------------------
   let scrollButton = $('#scroll-top');
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -19,6 +22,7 @@ $(function () {
       400
     );
   });
+  // -------------------------------------------------------------------------->
   // list items navbar click item to move section
   $('.nav-header .container .nav-links > li a').on('click', function () {
     $('html,body').animate(
@@ -104,4 +108,14 @@ $(function () {
       events.seconds
     );
   }, 1000);
+  // -------------------------------------------------------------------------->
+  // Show Loading
+  $('.loading-overlay .spinner').fadeOut(400, function () {
+    $('body').css('overflow', 'hidden');
+    $(this)
+      .parent()
+      .fadeOut(400, function () {
+        $(this).remove();
+      });
+  });
 });
