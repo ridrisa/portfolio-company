@@ -111,7 +111,7 @@ $(function () {
   // -------------------------------------------------------------------------->
   // Show Loading
   $('.loading-overlay .spinner').fadeOut(400, function () {
-    $('body').css('overflow-y', 'hidden');
+    $('body').css('overflow', 'hidden');
     $(this)
       .parent()
       .fadeOut(400, function () {
@@ -119,7 +119,7 @@ $(function () {
       });
   });
   // collapsed navbar mobile screen
-  $('.navbar .nav-links a').on('click', function () {
-    $('.navbar input[type=checkbox]:checked ~ .menu').fadeToggle(200);
-  });
+  // $('.navbar .nav-links a').on('click', function () {
+  //   $('.navbar input[type=checkbox]:checked ~ .menu').toggle(200);
+  // });
 });
