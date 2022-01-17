@@ -30,10 +30,9 @@
   .articles{
     padding-block: 3rem;
   }
-  .articles .box {
-    grid-template-columns: repeat(1,1fr);
-  }
-  .gallery .items {
+  .articles .box,
+  .gallery .items ,
+  .features .box {
     grid-template-columns: repeat(1,1fr);
   }
 }
