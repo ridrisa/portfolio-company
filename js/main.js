@@ -118,4 +118,8 @@ $(function () {
         $(this).remove();
       });
   });
+  // collapsed navbar mobile screen
+  $('.navbar .nav-links a').on('click', function () {
+    $('.navbar .menu').fadeToggle(200);
+  });
 });
