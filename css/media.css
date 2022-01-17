@@ -37,7 +37,8 @@
   .team-members .items,
   .services .items,
   .top-videos .box,
-  .discount .items{
+  .discount .items,
+  .footer .items{
     grid-template-columns: repeat(1,1fr);
   }
   .skills .box,
@@ -88,6 +89,9 @@
   .discount .items .form form .form-control textarea,
   .discount .items .form form .form-control button{
     width: 90%;
+  }
+  .footer .items .item.images .icon{
+    margin: .2rem;
   }
 }
 @media screen and (min-width:768px) and (max-width:991px){
