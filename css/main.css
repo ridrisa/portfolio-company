@@ -1,8 +1,8 @@
 /* 
 * Template Name             : Portfolio Company
 * Start Date                : 2-1-2022
-* End Date                  : 
-* Last Update               : 
+* End Date                  : 17-1-2022
+* Last Update               : 17-1-2022
 * Version                   : 1.0.0
 * URL                       : https://mohammedmodather2020.github.io/portfolio-company
 * GitHub URL                : https://github.com/MohammedModather2020/portfolio-company.git
@@ -32,13 +32,14 @@
    2.15- Footer
    2.16- CopyRight
    2.17- Scroll Top
-   2.18- Loading 
+  2.18- Loading 
 * 3- Common Style
    3.0- Container
    3.1- Main Title
    3.2- Padding Block 
    3.3- PlaceHolder Input
    3.4- Spikes
+   3.5- Scroll Bar 
 */
 /* 
 /** 1- Genral Style */
@@ -1862,4 +1863,28 @@ body{
   background-image: linear-gradient(135deg, #FFF 25%, transparent 25%), linear-gradient(225deg, #FFF 25%, transparent 25%);
   background-size: 20px 20px;
 }
-
+/** 3.5- Scroll Bar */
+::-webkit-scrollbar {
+  background-color: var(--primaryColor);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondaryColor);
+  border-radius: 7px
+}
+::-moz-scrollbar {
+  background-color: var(--primaryColor);
+  width: 8px;
+}
+::-moz-scrollbar-thumb {
+  background-color: var(--secondaryColor);
+  border-radius: 7px;
+}
+::-o-scrollbar {
+  background-color: var(--primaryColor);
+  width: 8px;
+}
+::-o-scrollbar-thumb {
+  background-color: var(--secondaryColor);
+  border-radius: 7px;
+}
