@@ -48,6 +48,7 @@ $(function () {
       desc: 'Games — In terms of the number of game releases, the Ys series is second only ... (who had ported all three previous games to that platform)',
     },
   ];
+  // -------------------------------------------------------------------------->
   // click item to show video and sow details video
   $('.top-videos .box .list-item li:not(:first-of-type) .title').on(
     'click',
@@ -63,4 +64,13 @@ $(function () {
       });
     }
   );
+  // -------------------------------------------------------------------------->
+  // count down until events date
+  setInterval(()=>{
+    const events = countdown( new Date(2022, 9, 10) )
+    $('.events .items .info .time .unit:first-of-type .count').text(events.days)
+    $('.events .items .info .time .unit:nth-of-type(2) .count').text(events.hours)
+    $('.events .items .info .time .unit:nth-of-type(3) .count').text(events.minutes)
+    $('.events .items .info .time .unit:last-of-type .count').text(events.seconds)
+  },1000)
 });
