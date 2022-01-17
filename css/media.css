@@ -7,7 +7,7 @@
   }
   .main{
     height: calc(100vh - 45px);
-    top: 50px;
+    top: 49px;
   }
   .main::before{
     transform: skew(-26.0deg);
