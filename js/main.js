@@ -111,7 +111,7 @@ $(function () {
   // -------------------------------------------------------------------------->
   // Show Loading
   $('.loading-overlay .spinner').fadeOut(400, function () {
-    $('body').css('overflow-y', 'auto');
+    $('body').css('overflow-y', 'hidden');
     $(this)
       .parent()
       .fadeOut(400, function () {

@@ -10,11 +10,11 @@
     top: 49px;
   }
   .main::before{
-    transform: skew(-26.0deg);
-    -webkit-transform: skew(-26.0deg);
-    -moz-transform: skew(-26.0deg);
-    -ms-transform: skew(-26.0deg);
-    -o-transform: skew(-26.0deg);
+    transform: skew(-26.6deg);
+    -webkit-transform: skew(-26.6deg);
+    -moz-transform: skew(-26.6deg);
+    -ms-transform: skew(-26.6deg);
+    -o-transform: skew(-26.6deg);
 }
   .main .container{
     overflow: hidden;
