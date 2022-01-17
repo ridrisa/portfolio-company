@@ -24,10 +24,10 @@ $(function () {
   });
   // -------------------------------------------------------------------------->
   // list items navbar click item to move section
-  $('.nav-header .container .nav-links > li a').on('click', function () {
+  $('.nav-header .container .nav-links > li a,.navbar .nav-links a').on('click', function () {
     $('html,body').animate(
       {
-        scrollTop: $('#' + $(this).data('value')).offset().top - 60,
+        scrollTop: $('#' + $(this).data('value')).offset().top - 45,
       },
       400
     );
