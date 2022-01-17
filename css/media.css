@@ -10,11 +10,11 @@
     top: 50px;
   }
   .main::before{
-    transform: skew(-25.8deg);
-    -webkit-transform: skew(-25.8deg);
-    -moz-transform: skew(-25.8deg);
-    -ms-transform: skew(-25.8deg);
-    -o-transform: skew(-25.8deg);
+    transform: skew(-26.0deg);
+    -webkit-transform: skew(-26.0deg);
+    -moz-transform: skew(-26.0deg);
+    -ms-transform: skew(-26.0deg);
+    -o-transform: skew(-26.0deg);
 }
   .main .container{
     overflow: hidden;
@@ -29,6 +29,9 @@
   }
   .articles{
     padding-block: 3rem;
+  }
+  .articles .box {
+    grid-template-columns: repeat(1,1fr);
   }
 }
 @media screen and (min-width:768px) and (max-width:991px){
