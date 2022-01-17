@@ -33,7 +33,8 @@
   .articles .box,
   .gallery .items ,
   .features .box,
-  .testimonials .items {
+  .testimonials .items,
+  .team-members .items {
     grid-template-columns: repeat(1,1fr);
   }
 }
