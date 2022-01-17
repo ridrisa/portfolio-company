@@ -47,7 +47,8 @@
     align-items: unset;
   }
   .works .box .image img,
-  .skills .box .image img{
+  .skills .box .image img,
+  .events .items .image img{
     width: 100%;
   }
   .works .box .work{
@@ -55,6 +56,18 @@
   }
   .works .box .work .item .info .name{
     text-align: center;
+  }
+  .events::after{
+    display: none;
+  }
+  .events .items{
+    display: block;
+  }
+  .events .items .info .time{
+    gap: .5rem;
+  }
+  .events .items .info .subscribe form .form-control input[type='email']{
+    width: 68%;
   }
 }
 @media screen and (min-width:768px) and (max-width:991px){
