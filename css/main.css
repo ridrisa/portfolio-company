@@ -455,7 +455,7 @@ body{
   transform-origin: bottom;
   bottom: 0;
   height: 200px;
-  z-index: 999999;
+  z-index: 9999;
   left: -7px;
   right: 0;
   background-color: #fff;
