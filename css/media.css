@@ -35,7 +35,8 @@
   .features .box,
   .testimonials .items,
   .team-members .items,
-  .services .items {
+  .services .items,
+  .top-videos .box{
     grid-template-columns: repeat(1,1fr);
   }
   .skills .box,
