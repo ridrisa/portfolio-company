@@ -201,7 +201,7 @@ body{
 /** 2.1- Main  */
 .main{
   position: relative;
-  height: calc(100vh - 48px);
+  height: calc(100vh - 25px);
   top: 48px;
 }
 .main .container{
