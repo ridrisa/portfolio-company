@@ -33,6 +33,9 @@
   .articles .box {
     grid-template-columns: repeat(1,1fr);
   }
+  .gallery .items {
+    grid-template-columns: repeat(1,1fr);
+  }
 }
 @media screen and (min-width:768px) and (max-width:991px){
   .container{
