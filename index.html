@@ -1,982 +1,399 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="portfolio company template design just using html,css and js"/>
-    <meta name="keywords" content="portfolio,company,template,website,html,css,nice template"/>
-    <title>Portfolio Company</title>
-    <!-- Font Family Cairo -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" />
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="css/all.min.css"/>
-    <!-- AOS -->
-    <link rel="stylesheet" href="css/aos.min.css"/>
-    <!-- Normalize Css -->
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <!-- Css Files -->
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/menu-mobile.css"/>
-    <link rel="stylesheet" href="css/media.css"/>
-    </style>
-  </head>
-  <body>
-    <!--* Start Menu Mobile-->
-    <nav class="navbar">
-      <div class="logo"><a href="index.html"><img src="assets/images/digalyzlogo.png" alt=Cover Image style="width: 100%; height: auto;"/></a></div>
-      <ul class="nav-links">
-        <input type="checkbox" id="checkbox_toggle" />
-        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        <div class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#articles" data-value="articles">Articles</a></li>
-          <li><a href="#gallery" data-value="gallery">Gallery</a></li>
-          <li><a href="#features" data-value="features">Features</a></li>
-          <li class="dropdown-menu">
-            <a href="/">Other Links</a>
-            <ul class="dropdown">
-              <li><a href="#testimonials" data-value="testimonials"><i class="far fa-comments fa-fw"></i> Testimonials</a></li>
-              <li><a href="#team-members" data-value="team-members"><i class="far fa-user fa-fw"></i>Team Members</a></li>
-              <li><a href="#services" data-value="services"><i class="far fa-building fa-fw"></i>Services</a></li>
-              <li><a href="#skills" data-value="skills"><i class="far fa-check-circle fa-fw"></i>Our Skills</a></li>
-              <li><a href="#works" data-value="works"><i class="far fa-clipboard fa-fw"></i>How it works</a></li>
-            </ul> <!-- ./dropdown -->
-          </li> <!-- ./dropdown-menu -->
-        </div> <!-- ./menu -->
-      </ul> <!-- ./nav-links -->
-    </nav> <!-- ./navbar -->
-    <!--* Start Nav Header -->
-    <div class="nav-header">
-      <div class="container">
-        <div class="brand">
-        <a href="index.html"><img class="logo" src="assets/images/digalyzlogo.png" alt="Logo"></a>
-        </div> <!-- ./brand -->
-        <ul class="nav-links">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#articles" data-value="articles">Articles</a></li>
-          <li><a href="#gallery" data-value="gallery">Gallery</a></li>
-          <li><a href="#features"data-value="features">Features</a></li>
-          <li><a href="#other-link">Other Links</a>
-            <div class="dropdown">
-              <div class="image">
-                <img src="assets/images/megamenu.png" alt="Image mega menu">
-              </div> <!-- ./image -->
-              <ul class="dropdown-menu">
-                <li><a href="#testimonials" data-value="testimonials"><i class="far fa-comments fa-fw"></i>Testimonials</a></li>
-                <li><a href="#team-members" data-value="team-members"><i class="far fa-user fa-fw"></i>Team Members</a></li>
-                <li><a href="#services" data-value="services"><i class="far fa-building fa-fw"></i>Services</a></li>
-                <li><a href="#skills" data-value="skills"><i class="far fa-check-circle fa-fw"></i>Our Skills</a></li>
-                <li><a href="#works" data-value="works"><i class="far fa-clipboard fa-fw"></i>How it works</a></li>
-              </ul> <!-- ./dropdown-menu -->
-              <ul class="dropdown-menu">
-                <li><a href="#events" data-value="events"><i class="far fa-calendar fa-fw"></i>Events</a></li>
-                <li><a href="#pricing" data-value="pricing"><i class="fas fa-server fa-fw"></i>Pricing Plans</a></li>
-                <li><a href="#top-videos" data-value="top-videos"><i class="far fa-play-circle fa-fw"></i>Top Videos</a></li>
-                <li><a href="#statistic" data-value="statistic"><i class="far fa-chart-bar fa-fw"></i>Statistic</a></li>
-                <li><a href="#discount" data-value="discount"><i class="fas fa-percent fa-fw"></i>Request A Discount</a></li>
-              </ul> <!-- ./dropdown-menu -->
-            </div> <!-- ./dropdown -->
-          </li>
-        </ul> <!-- ./nav-links -->
-      </div> <!-- ./container -->
-    </div> <!-- ./nav-header -->
-    <!--* Start Main -->
-    <main class="main">
-      <div class="container">
-        <div class="text">
-          <h1 class="title" data-aos="fade-up" data-aos-delay="100">Welcome, To Softy Pinko</h1>
-          <p class="desc" data-aos="fade-up" data-aos-delay="150">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro perferendis eius saepe perspiciatis praesentium numquam ipsa doloremque. Culpa natus aperiam aut facilis officia excepturi. In illo aliquid officia itaque.</p>
-        </div> <!-- ./text -->
-        <div class="image">
-          <img data-aos="fade-right" data-aos-delay="100" src="assets/images/landing-image.png" alt="Images Landing">
-        </div> <!-- ./image -->
-      </div> <!-- ./container -->
-      <a class="go-down" href="#articles"><i class="fas fa-angle-double-down fa-fw fa-lg"></i></a>
-    </main> <!-- ./main -->
-    <!--* Start Articles -->
-    <div class="articles p-y" id="articles">
-      <div class="container">
-        <header class="main-title">
-          <h2 class="title" data-aos="fade-up" data-aos-delay="100">Articles</h2>
-        </header> <!-- ./main-title -->
-        <div class="box">
-          <div class="item" data-aos="fade-left" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-01.jpg" alt="Creating components"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-left" data-aos-delay="120">Creating components</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">All Vue examples are provided as a simple single component and make no assumptions about how you want to break things down</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-02.jpg" alt="Accessibility considerations"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="120">Accessibility considerations</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Some data has been extracted into basic local variables just to clean up duplication and make the code easier to read and understand.</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-down" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-03.jpg" alt="Dependencies transitions"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="120">Dependencies transitions</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">After adapting the content for your own project, breaking it down into separate project components, and wiring up your data source.</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-04.jpg" alt="Resources & assets"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="120">Resources & assets</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">When you're adapting code from Tailwind UI for your own projects, you should break the projects examples down into smaller components.</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-left" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-05.jpg" alt="Optional add the inter"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="120">Optional add the inter</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">We've done our best to ensure that all of the markup in Tailwind UI is as accessible as possible, but when you're building.</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-06.jpg" alt="Installing dependencies"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="120">Installing dependencies</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Necessary JS yourself or want to integrate with a framework other than React or Vue, we also provide every Tailwind UI.</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-down" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-07.jpg" alt="Provided as a simple single"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="120">Provided as a simple single </h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Should break the examples down into smaller components as necessary to achieve whatever level of reuse you need.</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/articles/articles-08.jpg" alt="Whatever level of reuse"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="120">Whatever level of reuse</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">When you're adapting code from Tailwind UI for your own projects, you should break the examples down into smaller.</p>
-              <hr class="line"/>
-              <div class="link" data-aos="fade-up" data-aos-delay="170">
-                <a href="">Read More</a>
-                <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-        </div> <!-- ./box -->
-      </div> <!-- ./container -->
-    </div> <!-- ./articles -->
-    <!--* Start Gallery -->
-    <div class="gallery spikes p-y" id="gallery">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Gallery</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="items"> 
-          <div class="item" data-aos="fade-left"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-01.png" alt="Image gallery 1"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-          <div class="item" data-aos="fade-up"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-02.png" alt="Image gallery 2"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-          <div class="item" data-aos="fade-down"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-03.jpg" alt="Image gallery 3"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-          <div class="item" data-aos="fade-right"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-04.png" alt="Image gallery 4"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-          <div class="item" data-aos="fade-left"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-05.jpg" alt="Image gallery 5"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-          <div class="item" data-aos="fade-up"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-06.png" alt="Image gallery 6"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-          <div class="item" data-aos="fade-down"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-04.png" alt="Image gallery 4"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-          <div class="item" data-aos="fade-right"  data-aos-duration="1500">
-            <div class="image">
-              <img src="assets/images/gallery/gallery-02.png" alt="Image gallery 2"/>
-            </div> <!-- ./image -->
-          </div> <!-- /item -->
-        </div> <!-- ./items -->
-      </div> <!-- ./container -->
-    </div> <!-- ./gallery -->
-    <!--* Features -->
-    <div class="features p-y" id="features">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Features</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="box">
-          <div class="item quality" data-aos="fade-left" data-aos-delay="120">
-            <div class="image">
-              <img src="assets/images/features/features-01.jpg" alt="Quality Features"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="140">Quality</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="160">In case you encounter an issue, you can open a ticket on Github. Also feature requests can be entered here: Github issue tracker.</p>
-              <div class="link" data-aos="fade-up" data-aos-delay="180">
-                <a href="">More</a> <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item time"  data-aos="fade-up" data-aos-delay="120">
-            <div class="image">
-              <img src="assets/images/features/features-02.jpg" alt="Time Features"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="140">Time</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="160">Making sure components are properly keyboard accessible (dropdowns should be navigated with up/down arrow keys, modals should close when you press escape).</p>
-              <div class="link" data-aos="fade-up" data-aos-delay="180">
-                <a href="">More</a> <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item passion"  data-aos="fade-right" data-aos-delay="120">
-            <div class="image">
-              <img src="assets/images/features/features-03.jpg" alt="Passion Features"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="140">Passion</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="160">Correctly handling focus (you shouldn't be able to tab to an element behind a modal, the first item in a dropdown should be auto-focused when the dropdown opens, etc.)</p>
-              <div class="link" data-aos="fade-up" data-aos-delay="180">
-                <a href="">More</a> <i class="fas fa-angle-double-right fa-fw"></i>
-              </div> <!-- ./link -->
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-        </div> <!-- ./box -->
-      </div> <!-- ./container -->
-    </div> <!-- ./features -->
-    <!--* Start Testimonials -->
-    <div class="testimonials p-y" id="testimonials">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Testimonials</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="items">
-          <div class="item"  data-aos="fade-left" data-aos-delay="120">
-            <div class="image">
-              <img src="assets/images/testimonials/avatar-01.png" alt="Joshua Fields Millburn"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="120">Joshua Fields Millburn</h3>
-              <h4 class="jop-title" data-aos="fade-up" data-aos-delay="120">Full Stack Developer</h4>
-              <div class="rating" data-aos="fade-up" data-aos-delay="135">
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="far fa-star fa-fw"></i>
-              </div> <!-- ./rating -->
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Josh primarily writes on The Minimalists, but he also writes fiction and nonfiction books.  He uses his full name domain as a living resumé, to direct people to all the places.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="120">
-            <div class="image">
-              <img src="assets/images/testimonials/avatar-02.png" alt="Tara Gentile"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="120">Tara Gentile</h3>
-              <h4 class="jop-title" data-aos="fade-up" data-aos-delay="120">Graphic Designer</h4>
-              <div class="rating" data-aos="fade-up" data-aos-delay="135">
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fa fa-star-half-alt fa-fw"></i>
-              </div> <!-- ./rating -->
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Tara uses her full name domain as the complete “home” for all her work online and her home page does a lot of great things in just a small amount of space</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="100">
-            <div class="image">
-              <img src="assets/images/testimonials/avatar-03.png" alt="Seth Godin"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="120">Seth Godin</h3>
-              <h4 class="jop-title" data-aos="fade-up" data-aos-delay="120">Software Engineer</h4>
-              <div class="rating" data-aos="fade-up" data-aos-delay="135">
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fa fa-star-half-alt fa-fw"></i>
-                <i class="far fa-star fa-fw"></i>
-                <i class="far fa-star fa-fw"></i>
-              </div> <!-- ./rating -->
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Seth has one of the most popular blogs on the internet and it is simply just a Typepad hosted site,  But, Seth’s calling card on the internet is SethGodin.com, where you can quickly.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-left" data-aos-delay="150">
-            <div class="image">
-              <img src="assets/images/testimonials/avatar-04.png" alt="Danielle Laporte"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="120">Danielle Laporte</h3>
-              <h4 class="jop-title" data-aos="fade-up" data-aos-delay="120">Android Developer</h4>
-              <div class="rating" data-aos="fade-up" data-aos-delay="135">
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fa fa-star-half-alt fa-fw"></i>
-                <i class="far fa-star fa-fw"></i>
-              </div> <!-- ./rating -->
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Danielle’s “White Hot Truth” blog is now fully branded around her name. She has injected herself fully into the brand and has everything all in one convenient.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="150">
-            <div class="image">
-              <img src="assets/images/testimonials/avatar-05.png" alt="Joel Runyon"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="120">Joel Runyon</h3>
-              <h4 class="jop-title" data-aos="fade-up" data-aos-delay="120">Backend Developer</h4>
-              <div class="rating" data-aos="fade-up" data-aos-delay="135">
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fa fa-star-half-alt fa-fw"></i>
-                <i class="far fa-star fa-fw"></i>
-              </div> <!-- ./rating -->
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Joel has so many projects going on that this is the perfect example as to why it is good to have a single place to showcase everything you have your hands in.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="150">
-            <div class="image">
-              <img src="assets/images/testimonials/avatar-06.png" alt="Chris Guillebeau"/>
-            </div> <!-- ./image -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="120">Chris Guillebeau</h3>
-              <h4 class="jop-title" data-aos="fade-up" data-aos-delay="120">Embedded System </h4>
-              <div class="rating" data-aos="fade-up" data-aos-delay="135">
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fas fa-star fa-fw"></i>
-                <i class="fill fa fa-star-half-alt fa-fw"></i>
-              </div> <!-- ./rating -->
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">When Chris started The Art of Non-Conformity he hosted it at his full name domain and he hasn’t turned back since. He hosts his blog there but has other projects.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-        </div> <!-- ./items -->
-      </div> <!-- ./container -->
-    </div> <!-- ./testimonials -->
-    <!--* Start Team Members-->
-    <div class="team-members p-y" id="team-members">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Team Members</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="items">
-          <div class="item" data-aos="fade-left" data-aos-delay="100">
-            <div class="box">
-              <div class="image">
-                <img src="assets/images/team/team-01.png" alt="Laura Roeder"/>
-              </div> <!-- .image -->
-              <ul class="social-media" data-aos="fade-up" data-aos-delay="120">
-                <li><a href=""><i class="fab fa-facebook-f fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram fa-fw"></i></a></li>
-              </ul>
-            </div> <!-- ./box -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="130">Laura Roeder</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Laura has branded her business around her persona, especially through, her heavy use of videos.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <div class="image">
-                <img src="assets/images/team/team-02.png" alt="Marie Forleo"/>
-              </div> <!-- .image -->
-              <ul class="social-media" data-aos="fade-up" data-aos-delay="120">
-                <li><a href=""><i class="fab fa-facebook-f fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram fa-fw"></i></a></li>
-              </ul>
-            </div> <!-- ./box -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="130">Marie Forleo</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Last, but certainly not least is Marie Forleo. If I had to recommend just one example of how to inject.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="100">
-            <div class="box">
-              <div class="image">
-                <img src="assets/images/team/team-03.png" alt="Joshua Fields Millburn"/>
-              </div> <!-- .image -->
-              <ul class="social-media" data-aos="fade-up" data-aos-delay="120">
-                <li><a href=""><i class="fab fa-facebook-f fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram fa-fw"></i></a></li>
-              </ul>
-            </div> <!-- ./box -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="130">Joshua Fields Millburn</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Josh primarily writes on The Minimalists, but he also writes fiction and nonfiction books.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-left" data-aos-delay="130">
-            <div class="box">
-              <div class="image">
-                <img src="assets/images/team/team-04.png" alt="Tara Gentile"/>
-              </div> <!-- .image -->
-              <ul class="social-media" data-aos="fade-up" data-aos-delay="120">
-                <li><a href=""><i class="fab fa-facebook-f fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram fa-fw"></i></a></li>
-              </ul>
-            </div> <!-- ./box -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="130">Tara Gentile</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Tara uses her full name domain as the complete “home” for all her work online and her home page.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="130">
-            <div class="box">
-              <div class="image">
-                <img src="assets/images/team/team-05.png" alt="Seth Godin"/>
-              </div> <!-- .image -->
-              <ul class="social-media" data-aos="fade-up" data-aos-delay="120">
-                <li><a href=""><i class="fab fa-facebook-f fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram fa-fw"></i></a></li>
-              </ul>
-            </div> <!-- ./box -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="130">Seth Godin</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Seth has one of the most popular blogs on the internet and it is simply just a Typepad hosted site.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="130">
-            <div class="box">
-              <div class="image">
-                <img src="assets/images/team/team-06.png" alt="JDanielle Laporte"/>
-              </div> <!-- .image -->
-              <ul class="social-media" data-aos="fade-up" data-aos-delay="120">
-                <li><a href=""><i class="fab fa-facebook-f fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin fa-fw"></i></a></li>
-                <li><a href=""><i class="fab fa-instagram fa-fw"></i></a></li>
-              </ul>
-            </div> <!-- ./box -->
-            <div class="info">
-              <h3 class="name" data-aos="fade-up" data-aos-delay="130">JDanielle Laporte</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="150">Danielle’s “White Hot Truth” blog is now fully branded around her name. She has injected herself.</p>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-        </div> <!-- ./items -->
-      </div> <!-- ./container -->
-    </div> <!-- ./our-teams -->
-    <!--* start Services  -->
-    <div class="services spikes p-y" id="services">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Services</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="items">
-          <div class="item" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon" data-aos="fade-up" data-aos-delay="120">
-              <i class="fas fa-user-shield fa-fw fa-4x"></i>
-            </div> <!-- ./icon -->
-            <h3 class="title" data-aos="fade-up" data-aos-delay="130">Security</h3>
-            <div class="info" data-aos="fade-up" data-aos-delay="150">
-              <a class="link" href="">Details <i class="fas fa-angle-double-right fa-fw"></i></a>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon" data-aos="fade-up" data-aos-delay="120">
-              <i class="fas fa-tools fa-fw fa-4x"></i>
-            </div> <!-- ./icon -->
-            <h3 class="title" data-aos="fade-up" data-aos-delay="130">Fix Issues</h3>
-            <div class="info" data-aos="fade-up" data-aos-delay="150">
-              <a class="link" href="">Details <i class="fas fa-angle-double-right fa-fw"></i></a>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="100">
-            <div class="icon" data-aos="fade-up" data-aos-delay="120">
-              <i class="fas fa-map-marked-alt fa-fw fa-4x"></i>
-            </div> <!-- ./icon -->
-            <h3 class="title" data-aos="fade-up" data-aos-delay="130">Location</h3>
-            <div class="info" data-aos="fade-up" data-aos-delay="150">
-              <a class="link" href="">Details <i class="fas fa-angle-double-right fa-fw"></i></a>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon" data-aos="fade-up" data-aos-delay="120">
-              <i class="fas fa-laptop-code fa-fw fa-4x"></i>
-            </div> <!-- ./icon -->
-            <h3 class="title" data-aos="fade-up" data-aos-delay="130">Coding</h3>
-            <div class="info" data-aos="fade-up" data-aos-delay="150">
-              <a class="link" href="">Details <i class="fas fa-angle-double-right fa-fw"></i></a>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon" data-aos="fade-up" data-aos-delay="120">
-              <i class="fas fa-palette fa-fw fa-4x"></i>
-            </div> <!-- ./icon -->
-            <h3 class="title" data-aos="fade-up" data-aos-delay="130">Design</h3>
-            <div class="info" data-aos="fade-up" data-aos-delay="150">
-              <a class="link" href="">Details <i class="fas fa-angle-double-right fa-fw"></i></a>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="100">
-            <div class="icon" data-aos="fade-up" data-aos-delay="120">
-              <i class="fas fa-bullhorn fa-fw fa-4x"></i>
-            </div> <!-- ./icon -->
-            <h3 class="title" data-aos="fade-up" data-aos-delay="130">Marketing</h3>
-            <div class="info" data-aos="fade-up" data-aos-delay="150">
-              <a class="link" href="">Details <i class="fas fa-angle-double-right fa-fw"></i></a>
-            </div> <!-- ./info -->
-          </div> <!-- ./item -->
-        </div> <!-- ./items -->
-      </div> <!-- ./container -->
-    </div> <!-- ./services -->
-    <!--* Start Skills  -->
-    <div class="skills p-y" id="skills">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Skills</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="box">
-          <div class="image" data-aos="fade-left" data-aos-delay="120">
-            <img src="assets/images/skills.png" alt="Images Our Skills"/>
-          </div> <!-- ./image -->
-          <ul class="skills-progress">
-            <li class="skill" data-aos="fade-up" data-aos-delay="120">
-              <h3 class="title">Html && Html5 <span>80%</span></h3>
-              <div class="progress">
-                <span style="width: 80%;"></span>
-              </div> <!-- ./progress -->
-            </li> <!-- ./skill -->
-            <li class="skill" data-aos="fade-up" data-aos-delay="150">
-              <h3 class="title">Css & Css3 <span>85%</span></h3>
-              <div class="progress">
-                <span style="width: 85%;"></span>
-              </div> <!-- ./progress -->
-            </li> <!-- ./skill -->
-            <li class="skill" data-aos="fade-up" data-aos-delay="170">
-              <h3 class="title">JavaScript & ES6 <span>70%</span></h3>
-              <div class="progress">
-                <span style="width: 70%;"></span>
-              </div> <!-- ./progress -->
-            </li> <!-- ./skill -->
-            <li class="skill" data-aos="fade-up" data-aos-delay="190">
-              <h3 class="title">React Js <span>75%</span></h3>
-              <div class="progress">
-                <span style="width: 75%;"></span>
-              </div> <!-- ./progress -->
-            </li> <!-- ./skill -->
-            <li class="skill" data-aos="fade-up" data-aos-delay="210">
-              <h3 class="title">Next Js <span>70%</span></h3>
-              <div class="progress">
-                <span style="width: 70%;"></span>
-              </div> <!-- ./progress -->
-            </li> <!-- ./skill -->
-          </ul> <!-- ./text -->
-        </div> <!-- ./box -->
-      </div> <!-- ./container -->
-    </div> <!-- ./skills -->
-    <!--* Start Works  -->
-    <div class="works p-y" id="works">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">How it work ?</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="box">
-          <div class="image" data-aos="fade-up" data-aos-delay="120">
-            <img src="assets/images/work-steps/work-steps.png" alt="Image Works"/>
-          </div> <!-- ./image -->
-          <div class="work">
-            <div class="item" data-aos="fade-left" data-aos-delay="100">
-              <div class="icon">
-                <img src="assets/images/work-steps/work-steps-1.png" alt="work-steps-1"/>
-              </div> <!-- ./icon -->
-              <div class="info">
-                <h3 class="name" data-aos="fade-up" data-aos-delay="130">Business Analyses</h3>
-                <p class="desc" data-aos="fade-up" data-aos-delay="150">Business analysis is a professional discipline of identifying business needs and determining solutions to business problems. Solutions often include a software-systems development component.</p>
-              </div> <!-- ./info -->
-            </div> <!-- ./item -->
-            <div class="item" data-aos="fade-down" data-aos-delay="100">
-              <div class="icon">
-                <img src="assets/images/work-steps/work-steps-3.png" alt="work-steps-3"/>
-              </div> <!-- ./icon -->
-              <div class="info">
-                <h3 class="name" data-aos="fade-up" data-aos-delay="130">Architecture</h3>
-                <p class="desc" data-aos="fade-up" data-aos-delay="150">Architecture (Latin architectura, from the Greek ἀρχιτέκτων arkhitekton "architect", from ἀρχι- "chief" and τέκτων "creator") is both the process and the.</p>
-              </div> <!-- ./info -->
-            </div> <!-- ./item -->
-            <div class="item" data-aos="fade-right" data-aos-delay="100">
-              <div class="icon">
-                <img src="assets/images/work-steps/work-steps-3.png" alt="work-steps-3"/>
-              </div> <!-- ./icon -->
-              <div class="info">
-                <h3 class="name" data-aos="fade-up" data-aos-delay="130">Developments</h3>
-                <p class="desc" data-aos="fade-up" data-aos-delay="150">Software development is the process of conceiving, specifying, designing, programming, testing, and bug fixing involved in creating and maintaining applications, or other software components.</p>
-              </div> <!-- ./info -->
-            </div> <!-- ./item -->
-          </div> <!-- ./work -->
-        </div> <!-- ./box -->
-      </div> <!-- ./container -->
-    </div> <!-- ./works -->
-    <!--* Start Events -->
-    <div class="events p-y" id="events">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Latest Events</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="items">
-          <div class="image" data-aos="fade-left" data-aos-delay="150">
-            <img src="assets/images/events.png" alt="Events"/>
-          </div> <!-- ./image -->
-          <div class="info" data-aos="fade-right" data-aos-delay="150"> 
-            <div class="time">
-             <div class="unit">
-              <span class="count">15</span>
-              <span class="title">Days</span>
-             </div> <!-- ./unit -->
-             <div class="unit">
-              <span class="count">80</span>
-              <span class="title">Hours</span>
-             </div> <!-- ./unit -->
-             <div class="unit">
-              <span class="count">45</span>
-              <span class="title">Minutes</span>
-             </div> <!-- ./unit -->
-             <div class="unit">
-              <span class="count">55</span>
-              <span class="title">Seconds</span>
-             </div> <!-- ./unit -->
-            </div><!-- ./time -->
-            <h3 class="title" data-aos="fade-up" data-aos-delay="140">Tech Masters Event 2022</h3>
-            <p class="desc" data-aos="fade-up" data-aos-delay="160">The 2021 Masters of Data & Technology Conference In Two Minutes · Sheila Colclasure, Global Chief Digital Responsibility and Public Policy Officer, IPG. From artificial intelligence to the Internet of Things, Europe is showing the way when it comes to regulating emerging technologies.</p>
-            <div class="subscribe">
-              <form>
-                <div class="form-control" data-aos="fade-up" data-aos-delay="180">
-                  <input type="email" placeholder="Enter Your Email"/>
-                  <button type="submit"><i class="fas fa-location-arrow fa-fw"></i> Subscribe</button>
-                </div> <!-- ./form-control -->
-              </form>
-            </div> <!-- ./subscribe -->
-          </div> <!-- ./info -->
-        </div> <!-- ./items -->
-      </div> <!-- ./container -->
-    </div> <!-- ./events -->
-    <!--* Start Pricing plans -->
-    <div class="pricing-plans p-y" id="pricing">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Pricing Plans</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="items">
-          <div class="item" data-aos="fade-left" data-aos-delay="100">
-            <h3 class="title" data-aos="fade-up" data-aos-delay="120">Basic</h3>
-            <div class="icon" data-aos="fade-up" data-aos-delay="140">
-              <img src="assets/images/pricing-plan/hosting-basic.png" alt="Pricing Plans hosting basic"/>
-            </div> <!-- ./icon -->
-            <div class="amount" data-aos="fade-up" data-aos-delay="160">
-              <h4 class="title">$15</h4>
-              <h5 class="sub-title">Per Month</h5>
-            </div> <!-- ./amount -->
-            <ul class="features">
-              <li data-aos="fade-up" data-aos-delay="180"><i class="fas fa-check fa-fw"></i> 10GB HDD Space</li>
-              <li data-aos="fade-up" data-aos-delay="200"><i class="fas fa-check fa-fw"></i> 5 Email Addresses</li>
-              <li data-aos="fade-up" data-aos-delay="220"><i class="fas fa-check fa-fw"></i> 2 Subdomains</li>
-              <li data-aos="fade-up" data-aos-delay="240"><i class="fas fa-check fa-fw"></i> 4 Databases</li>
-              <li data-aos="fade-up" data-aos-delay="260"><i class="fas fa-check fa-fw"></i> Basic Support</li>
-            </ul> <!-- ./features -->
-            <button class="btn" data-aos="fade-up" data-aos-delay="280"><a href="#">Choose Plan</a></button>
-          </div> <!-- ./item -->
-          <div class="item popular" data-aos="fade-up" data-aos-delay="100">
-            <div class="label" >
-              Most Popular
+<html>
+<head>
+ 
+<title>BARQ ADS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- CSS Files -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+ 
+<link href="css/styles.css" rel="stylesheet" media="screen">    
+
+<!-- Google Fonts --> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+
+
+<!-- Font Awesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> 
+</head>
+  
+<body data-spy="scroll" data-target="#navbar-scroll">
+ 
+ <div id="top"></div>
+
+<!-- NAVIGATION -->
+<div id="menu">
+	<nav class="navbar-wrapper navbar-default" role="navigation">
+		<div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-themers">
+				  <span class="sr-only">Toggle navigation</span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				  <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand site-name" href="#top"><img src="images/Barq.png" alt="logo"></a>
+			  </div>
+	 
+			  <div id="navbar-scroll" class="collapse navbar-collapse navbar-themers navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="#intro">About</a></li>
+					<li><a href="#feature">Features</a></li>
+					<li><a href="#subscribe">Contact us</a></li>
+					<li><a href="#clients">Clients</a></li>
+					<li><a href="#package">Pricing</a></li>
+				</ul>
+			  </div>
+		</div>
+	</nav>
+</div>
+ 
+<div class="fullscreen landing parallax banner" style="background-image:url('images/bg.png'); height: 50vh; background-repeat: no-repeat;">
+	<div class="overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="wow fadeInLeft">
+						BARQ <br>ADS & BEYOND </h1><div class="landing-text wow fadeInLeft">
+						<p>Welcome to BARQ ADS, where we're transforming the landscape of outdoor advertising. Our innovative platform turns vehicles into dynamic billboards, delivering your brand message directly to consumers on the go. With a fleet covering over 4 million kilometers monthly, we offer unmatched reach and exposure for your campaigns.
+							</p>
+					</div>
+				</div> 
+				
+				<!-- phone image -->
+				<div class="col-md-6">
+				<img src="images/bg1.png" alt="phone" class="header-phone img-responsive wow fadeInRight">
+				</div>
+			</div>
+		</div> 
+	</div> 
+</div>
+   
+<!-- intro section -->
+<div id="intro">
+		<div class="container">
+		<div class="row">
+	
+	<!-- feature image -->
+			<div class="col-md-6 feature-2-pic wow fadeInLeft">
+				<img src="images/feature2-image.jpg" alt="image" class="img-responsive">
+
+			</div>	
+			
+			<!-- feature content -->
+			<div class="col-md-6 wow fadeInRight">
+				<h2>Revolutionizing Outdoor Advertising with BARQ ADS</h2>
+				<p>Maximize your brand's reach with our innovative vehicle wrap advertising solutions, powered by real-time data and cutting-edge technology.
+				</p>		
+			</div>
+			 			  
+		</div>			  
+  
+	</div>
+</div>
+
+<!-- feature section -->
+<div id="feature">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-sm-12 text-center feature-title">
+
+			<!-- feature title -->
+				<h2>Cutting-Edge Advertising Solutions</h2>
+				<p>Transform our fleet into your mobile billboards with eye-catching full or partial wraps. These high-impact branding solutions offer continuous visibility as our vehicles navigate busy urban areas, ensuring maximum exposure for your brand</p>
+			</div>
+		</div>
+		<div class="row row-feat">
+			
+			<div class="col-md-12">
+
+				<!-- feature 1 -->
+				<div class="col-sm-4 feat-list">
+					<img src="images/car1.avif" alt="image" class="img-responsive">
+					<div class="inner">
+						<h4>Vehicle Wraps</h4>
+						<p>Transform our fleet into your mobile billboards with eye-catching full or partial wraps. These high-impact branding solutions offer continuous visibility as our vehicles navigate busy urban areas, ensuring maximum exposure for your brand.
+
+						</p>
+					</div>
+				</div>
+			
+				<!-- feature 2 -->
+				<div class="col-sm-4 feat-list">
+					<img src="images/Designer (8).png" alt="image" class="img-responsive" data-wow-delay="0.2s">
+					<div class="inner">
+						<h4>Digital Display</h4>
+						<p>Deploy dynamic digital ads with our state-of-the-art smart screens. These HD displays allow for real-time content updates and location-based triggers, enabling you to deliver targeted messages that capture attention and drive engagement.</p>
+					</div>
+				</div>
+			
+				<!-- feature 3 -->
+				<div class="col-sm-4 feat-list"> 
+					<img src="images/Design 39.png" alt="image" class="img-responsive" data-wow-delay="0.2s">
+					<div class="inner">
+						<h4>Interacive Campaigns</h4>
+						<p>Engage consumers with innovative interactive marketing campaigns. From product launches to promotional events, our platform supports creative executions that encourage direct audience participation and memorable brand experiences.</p>
+					</div>
+				</div>
+			
+				
+			</div>
+		</div>
+	</div>
+</div>
+<section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 wow fadeInRight animated" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; -webkit-animation-delay: 0.8s; animation-name: fadeInRight; -webkit-animation-name: fadeInRight;">
+                    <h2 class="title">Advanced Technology Platform</h2>
+
+                    <div class="feature-item">
+
+                        <div class="media">
+                            <div class="pull-left icon" href="#">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Geotargeting precision</h4>
+                                <p>Our advanced geotargeting technology allows you to deliver hyper-targeted campaigns based on precise geofencing and real-time data. This ensures your ads reach the right audience at the right time and place, significantly enhancing engagement and campaign effectiveness.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+
+                        <div class="media">
+                            <div class="pull-left icon" href="#">
+                                <i class="fa fa-rss"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Programmmatic Advertising</h4>
+                                <p>Streamline your ad buying process with our cutting-edge programmatic solutions. Available through leading platforms, our system automates and optimizes your campaigns in real-time, ensuring maximum efficiency and ROI for your advertising budget.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+
+                        <div class="media">
+                            <div class="pull-left icon" href="#">
+                                <i class="fa fa-recycle"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Comprehnsive Data Analytics</h4>
+                                <p>Gain valuable insights with our robust data analytics dashboard. Track routes, impressions, and engagement metrics in real-time, and use these insights to continuously refine your campaigns. Our platform empowers you to make data-driven decisions that maximize your advertising impact.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 wow fadeInLeft animated" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; -webkit-animation-delay: 0.8s; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">
+                    <div class="block">
+                        <img class="img-responsive" src="images/featured-app.png" alt="">
+                    </div>
+                </div>
             </div>
-            <h3 class="title" data-aos="fade-up" data-aos-delay="120">Advanced</h3>
-            <div class="icon" data-aos="fade-up" data-aos-delay="140">
-              <img src="assets/images/pricing-plan/hosting-advanced.png" alt="Pricing Plans hosting advanced"/>
-            </div> <!-- ./icon -->
-            <div class="amount" data-aos="fade-up" data-aos-delay="160">
-              <h4 class="title">$25</h4>
-              <h5 class="sub-title">Per Month</h5>
-            </div> <!-- ./amount -->
-            <ul class="features">
-              <li data-aos="fade-up" data-aos-delay="180"><i class="fas fa-check fa-fw"></i> 20GB HDD Space</li>
-              <li data-aos="fade-up" data-aos-delay="200"><i class="fas fa-check fa-fw"></i> 10 Email Addresses</li>
-              <li data-aos="fade-up" data-aos-delay="220"><i class="fas fa-check fa-fw"></i> 8 Subdomains</li>
-              <li data-aos="fade-up" data-aos-delay="240"><i class="fas fa-check fa-fw"></i> 8 Databases</li>
-              <li data-aos="fade-up" data-aos-delay="260"><i class="fas fa-check fa-fw"></i> Advanced Support</li>
-            </ul> <!-- ./features -->
-            <button class="btn" data-aos="fade-up" data-aos-delay="280"><a href="#">Choose Plan</a></button>
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="100">
-            <h3 class="title" data-aos="fade-up" data-aos-delay="120">Professional</h3>
-            <div class="icon" data-aos="fade-up" data-aos-delay="140">
-              <img src="assets/images/pricing-plan/hosting-professional.png" alt="Pricing Plans hosting professional"/>
-            </div> <!-- ./icon -->
-            <div class="amount" data-aos="fade-up" data-aos-delay="160">
-              <h4 class="title">$45</h4>
-              <h5 class="sub-title">Per Month</h5>
-            </div> <!-- ./amount -->
-            <ul class="features">
-              <li data-aos="fade-up" data-aos-delay="180"><i class="fas fa-check fa-fw"></i> 50GB HDD Space</li>
-              <li data-aos="fade-up" data-aos-delay="200"><i class="fas fa-check fa-fw"></i> 20 Email Addresses</li>
-              <li data-aos="fade-up" data-aos-delay="220"><i class="fas fa-check fa-fw"></i> 10 Subdomains</li>
-              <li data-aos="fade-up" data-aos-delay="240"><i class="fas fa-check fa-fw"></i> 20 Databases</li>
-              <li data-aos="fade-up" data-aos-delay="260"><i class="fas fa-check fa-fw"></i> Professional Support</li>
-            </ul> <!-- ./features -->
-            <button class="btn" data-aos="fade-up" data-aos-delay="280"><a href="#">Choose Plan</a></button>
-          </div> <!-- ./item -->
-        </div> <!-- ./items -->
-      </div> <!-- ./container -->
-    </div> <!-- ./pricing-plans -->
-    <!--* Start Top Videos -->
-    <div class="top-videos p-y" id="top-videos">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Top Videos</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="box">
-          <ul class="list-item">
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="120">Top Videos</h3> <i class="fas fa-random fa-fw"></i></li>
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="140">How to create Subdomains ?</h3><span>06:05</span></li>
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="160">Playing with the DNS</h3> <span>06:04</span></li>
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="180">Everything about the virtual hosts</h3> <span>03:42</span></li>
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="200">How to monitor your website ?</h3> <span>52:10</span></li>
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="220">Uncharted Beating The Last Boss</h3>  <span>12:33</span></li>
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="240">Ys Oath In Felghana Overview</h3> <span>10:39</span></li>
-            <li><h3 class="title" data-aos="fade-up" data-aos-delay="260">Ys Series All Games Ending</h3> <span>08:53</span></li>
-          </ul>
-          <div class="video" data-aos="fade-up" data-aos-delay="100">
-            <iframe width="100%" height="420" src="https://www.youtube.com/embed/AU7qkiXTiH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="info">
-              <h3 class="title" data-aos="fade-up" data-aos-delay="100">How to create Subdomains ?</h3>
-              <p class="desc" data-aos="fade-up" data-aos-delay="100">It is not always necessary to register a new domain name if you already have one and you are interested to have a separate site apart from the main one. 
-                Rather than registering a new domain name, you can always create a subdomain using a domain you already own, for example blog.domain.tld or forum.domain.tld (assuming you already hold domain.tld). You can also add multiple levels of subdomains, for instance info.blog.domain.tld.
-              </p>
-            </div> <!-- ./info -->
-          </div> <!-- ./video -->
-        </div> <!-- ./box -->
-      </div> <!-- ./container -->
-    </div> <!-- ./videos -->
-    <!--* Statistic -->
-    <div class="statistic p-y">
-      <header class="main-title">
-        <h2 class="title" data-aos="fade-up" data-aos-delay="100">Our Awesome Stats</h2>
-      </header> <!-- ./main-title -->
-      <div class="container">
-        <div class="items">
-          <div class="item" data-aos="fade-left" data-aos-delay="120">
-            <i class="icon far fa-user fa-2x fa-fw"></i>
-            <h3 data-purecounter-start="100"
-                data-purecounter-once="false"
-                data-purecounter-end="150"
-                data-purecounter-delay="10"
-                class="purecounter count">100</h3>
-            <span class="title">Clients</span>
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-up" data-aos-delay="120">
-            <i class="icon fas fa-code fa-2x fa-fw"></i>
-            <h3 data-purecounter-start="60"
-                data-purecounter-once="false"
-                data-purecounter-end="135"
-                data-purecounter-delay="10"
-                class="purecounter count">60</h3>
-            <span class="title">Projects</span>
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-down" data-aos-delay="120">
-            <i class="icon fas fa-globe-asia fa-2x fa-fw"></i>
-            <h3 data-purecounter-start="2"
-                data-purecounter-once="false"
-                data-purecounter-end="20"
-                data-purecounter-delay="10"
-                class="purecounter count">2</h3>
-            <span class="title">Countries</span>
-          </div> <!-- ./item -->
-          <div class="item" data-aos="fade-right" data-aos-delay="120">
-            <i class="icon far fa-money-bill-alt fa-2x fa-fw"></i>
-            <h3 data-purecounter-start="344"
-                data-purecounter-once="false"
-                data-purecounter-end="500"
-                data-purecounter-delay="10"
-                class="purecounter count">344</h3>
-            <span class="title">Money</span>
-          </div> <!-- ./item -->
-        </div> <!-- ./items --> 
-      </div> <!-- ./container -->
-    </div> <!-- ./statistic -->
-    <div class="discount" id="discount">
-      <div class="items">
-        <div class="brief">
-         <div class="info">
-            <h3 class="title" data-aos="fade-up" data-aos-delay="100">We Have A Discount</h3>
-            <p class="desc" data-aos="fade-up" data-aos-delay="120">A company, abbreviated as co., is a legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective. Company members share a common purpose and unite to achieve specific, declared goals.</p>
-            <img class="image" src="assets/images/discount.png" alt="Image discount" data-aos="fade-up" data-aos-delay="140"/>
-         </div> <!-- ./info -->
-        </div> <!-- ./brief -->
-        <div class="form">
-          <h3 class="title" data-aos="fade-up" data-aos-delay="120">Request A Discount</h3>
-          <form>
-            <div class="form-control" data-aos="fade-up" data-aos-delay="140">
-              <input type="text" name="name" placeholder="Enter your name"/>
-            </div> <!-- ./form-control -->
-            <div class="form-control" data-aos="fade-up" data-aos-delay="160">
-              <input type="email" name="email" placeholder="Enter your email"/>
-            </div> <!-- ./form-control -->
-            <div class="form-control" data-aos="fade-up" data-aos-delay="180">
-              <input type="tel" name="phone" placeholder="Enter your phone"/>
-            </div> <!-- ./form-control -->
-            <div class="form-control" data-aos="fade-up" data-aos-delay="200">
-              <textarea name="name" rows="8" placeholder="Enter your tell us about you needed"></textarea>
-            </div> <!-- ./form-control -->
-            <div class="form-control" data-aos="fade-up" data-aos-delay="220">
-              <button type="submit"> <i class="far fa-paper-plane"></i> Send</button>
-            </div> <!-- ./form-control -->
-          </form>
-        </div> <!-- ./form -->
-      </div> <!-- ./form -->
-    </div> <!-- ./discount -->
-    <!--* Start Footer  -->
-    <footer class="footer p-y">
-      <div class="container">
-        <div class="items">
-          <div class="item brief">
-            <h3 class="title">Profile Company</h3>
-            <ul class="social-links">
-              <li><a href=""><i class="fab fa-facebook-f fa-fw"></i></a></li>
-              <li><a href=""><i class="fab fa-twitter fa-fw"></i></a></li>
-              <li><a href=""><i class="fab fa-youtube fa-fw"></i></a></li>
-            </ul> <!-- ./social-links -->
-            <p class="desc">A company, abbreviated as co., is a legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective.</p>
-          </div> <!-- ./brief -->
-          <ul class="item links">
-            <li><i class="fa fa-angle-double-left fa-fw"></i><a href="#services">Services</a></li>
-            <li><i class="fa fa-angle-double-left fa-fw"></i><a href="#features">Features</a></li>
-            <li><i class="fa fa-angle-double-left fa-fw"></i><a href="#gallery">Gallery</a></li>
-            <li><i class="fa fa-angle-double-left fa-fw"></i><a href="#testimonials">Testimonials</a></li>
-            <li><i class="fa fa-angle-double-left fa-fw"></i><a href="#our-teams">Our Team</a></li>
-          </ul> <!-- ./links -->
-          <ul class="item info">
-            <li><i class="fas fa-map-marked-alt fa-fw fa-lg"></i> <a href=""> Egypt, Giza, Inside The Sphinx, Room Number 220</a></li>
-            <li><i class="far fa-clock fa-fw fa-lg"></i> <a href=""> Business Hours: From 10:00 To 18:00</a></li>
-            <li><i class="fas fa-phone-volume fa-fw fa-lg"></i> <a href="tel:249123456789"> +249123456789</a></li>
-          </ul> <!-- ./info -->
-          <div class="item images">
-            <div class="icon">
-              <img src="assets/images/gallery/gallery-01.png" alt="gallery 1"/>
-            </div> <!-- ./icon -->
-            <div class="icon">
-              <img src="assets/images/gallery/gallery-02.png" alt="gallery 2"/>
-            </div> <!-- ./icon -->
-            <div class="icon">
-              <img src="assets/images/gallery/gallery-03.jpg" alt="gallery 3"/>
-            </div> <!-- ./icon -->
-            <div class="icon">
-              <img src="assets/images/gallery/gallery-04.png" alt="gallery 4"/>
-            </div> <!-- ./icon -->
-            <div class="icon">
-              <img src="assets/images/gallery/gallery-05.jpg" alt="gallery 5"/>
-            </div> <!-- ./icon -->
-            <div class="icon">
-              <img src="assets/images/gallery/gallery-06.png" alt="gallery 6"/>
-            </div> <!-- ./icon -->
-          </div> <!-- ./images -->
-        </div> <!-- ./items -->
-      </div> <!-- ./container -->
-    </footer> <!-- ./footer -->
-     <!--* Start Copy Right -->
-     <div class="copy-right">
-      <p class="text-center mb-0">Copyright &copy; <b>Company</b>  2015 - 2022 - developed by<b><a translate='no' href=''target='_blank'rel='noreferrer'>🧡 m.modather</a></b></></p>
-    </div> <!-- ./copy-right -->
-    <!--* Start Scroll To Top  -->
-    <div id="scroll-top">
-      <i class="fas fa-level-up-alt fa-fw"></i>
-    </div> <!-- #/scroll-top -->
-    <!--* Start Loading -->
-    <div class="loading-overlay">
-      <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-      </div> <!-- ./spinner -->
-    </div> <!-- ./loading-overly -->
+        </div>
+    </section> 
 
 
+<!-- Clients section -->
+<div id="clients">
+	<div class="container">
+		<div class="text-center">
+			<h2 class="wow fadeInLeft">Clients</h2>
+			<div class="title-line wow fadeInRight"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">	
+			   <div id="owl-clients" class="owl-carousel owl-theme wow fadeInUp">
+				 
+					<!-- Clients 1 -->
+					<div class="clients-item">
+						<div class="client-pic text-center">
+						
+							<!-- client photo -->
+							<img src="images/download.png" alt="client">
+						</div>
+						<div class="box">
+						
+							<!-- Clients content -->
+							<p class="message text-center">"Printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type dummy text of the printing."</p>
+						</div>
+						<div class="client-info text-center">
+						
+						<!-- client name -->
+							John Doe, <span class="company">Google</span>	
+						</div>
+					</div>		
+					
+					<!-- Clients 2 -->
+					<div class="clients-item">
+						<div class="client-pic text-center">
 
-    <script src="js/jquery-3.5.min.js"></script>
-    <script src="js/purecounter.min.js"></script>
-    <script src="js/countdown.min.js"></script>
-    <script src="js/aos.min.js"></script>
-    <script src="js/main.js"></script>
+							<!-- client photo -->
+							<img src="images/client2.jpg" alt="client">
+						</div>
+						<div class="box">
+
+							<!-- Clients content -->
+							<p class="message text-center">"Lorem Ipsum is simply dummy text of the printing and when an unknown printer took a galley of type dummy text of the printing and typesetting industry and scrambled."</p>
+						</div>
+						<div class="client-info text-center">
+
+							<!-- client name -->
+							Glen Micheal, <span class="company">CN Technology</span>	
+						</div>
+					</div>				
+					
+					<!-- Clients 3 -->
+					<div class="clients-item">
+						<div class="client-pic text-center">
+
+							<!-- client photo -->
+							<img src="images/client3.jpg" alt="client">
+						</div>
+						<div class="box">
+
+							<!-- Clients content -->
+							<p class="message text-center">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer."</p>
+						</div>
+						<div class="client-info text-center">
+
+							<!-- client name -->
+							Chris Russel, <span class="company">Facebook</span>	
+						</div>
+					</div>			
+				 
+				</div>
+			</div>	
+		</div>	
+	</div>
+</div>
+<div id="package">
+	<div class="container">
+		<div class="text-center">
+		
+			<!-- pricing title -->
+			<h2 class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft; -webkit-animation-name: fadeInLeft;">Prices</h2>
+			<div class="title-line wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight; -webkit-animation-name: fadeInRight;"></div>
+		</div>
+		<div class="row package-option">
+
+			<!-- package 1 -->
+			<div class="col-sm-4">
+			  <div class="price-box wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
+			   <div class="price-heading text-center">
+			   
+					
+					<!-- package name -->
+					<h3>Basic Package</h3>
+			   </div>
+			   
+			   <!-- price -->
+				<div class="price-group text-center">
+					<span class="dollar">SAR</span>
+					<span class="price">2000</span>
+					<span class="time">/Vehicle</span>
+				</div>
+			
+				<!-- package features -->
+			   <ul class="price-feature text-center">
+				  <li><strong>1000 SAR </strong> Setup fee's</li>
+				  <li><strong>30 - 99</strong> Vehicle</li>
+				  <li><strong>3 Months</strong> Minimum duration</li>
+				  <li><strong>Monthly</strong> Reporting</li>
+				  <li><strong>Car sticker - logo only</strong> Branding</li>
+			   </ul>
+			   
+			   <!-- package button -->
+			   <div class="price-footer text-center">
+				 <a class="btn btn-price" href="#">Contact Us</a>
+				</div>	
+			  </div>
+			</div>
+			
+			<!-- package 2 -->
+			<div class="col-sm-4">
+			  <div class="price-box wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; -webkit-animation-delay: 0.2s; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
+			   <div class="price-heading text-center">
+ 
+
+			   <!-- package name -->
+				<h3>Premium Package</h3>
+			   </div>
+			   
+			   <!-- price -->
+				<div class="price-group text-center">
+					<span class="dollar">SAR</span>
+					<span class="price">1800</span>
+					<span class="time">/Vehicle</span>
+				</div>
+			
+				<!-- package features -->
+			   <ul class="price-feature text-center">
+				  <li><strike><strong>1000 SAR</strong> Setup fee's</li></strike>
+				  <li><strong>more than 100</strong> Vehicle</li>
+				  <li><strong>3 Months</strong> Minimum duration</li>
+				  <li><strong>Real-time tracking dashboard</strong></li>
+				  <li><strong>Large vinyl wrap - full vehicle</strong> Branding</li>
+
+			   </ul>
+
+				<!-- package button -->
+			   <div class="price-footer text-center">
+				 <a class="btn btn-price" href="#">Contact Us</a>
+				</div>
+			  </div>
+			</div>	
+			
+			<!-- package 3 -->
+			<div class="col-sm-4">
+			  <div class="price-box wow fadeInUp animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; -webkit-animation-delay: 0.4s; animation-name: fadeInUp; -webkit-animation-name: fadeInUp;">
+			   <div class="price-heading text-center">
+				</div>
+		</div>
+	</div>
+</div>	  
+<!-- footer -->
+<footer id="footer">
+	<div class="container">
+		<div class="col-sm-4 col-sm-offset-4">
+			<!-- social links -->
+				<div class="social text-center">
+					<ul>
+						<li><a class="wow fadeInUp" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://www.facebook.com/" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://plus.google.com/" data-wow-delay="0.4s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a class="wow fadeInUp" href="https://instagram.com/" data-wow-delay="0.6s"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>	
+			<div class="text-center wow fadeInUp" style="font-size: 14px;">Copyright BARQADS 2024 <a href="http://www.BARQADS.com">BARQ ADS</a></div>
+			<a href="#" class="scrollToTop"><i class="fa fa-arrow-circle-o-up"></i></a>
+		</div>	
+	</div>	
+</footer>
+	
+	<!-- javascript files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/ekko-lightbox-min.js"></script>
+	<script type="text/javascript">
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); 
+	</script>
+	<script>
+		new WOW().init();
+	</script>
   </body>
 </html>
